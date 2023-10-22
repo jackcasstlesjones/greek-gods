@@ -23,6 +23,7 @@ h2 {
 }
 
 .god-container-closed h2 {
+  cursor: pointer;
   font-size: 68px;
   font-weight: 100;
 }

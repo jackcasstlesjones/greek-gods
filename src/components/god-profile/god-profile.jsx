@@ -29,11 +29,8 @@ export default function GodProfile({
   };
   if (show === false) {
     return (
-      <div
-        onMouseEnter={handleClick}
-        className={`god-container-closed ${cssClass}`}
-      >
-        <h2>{godName}</h2>
+      <div className={`god-container-closed ${cssClass}`}>
+        <h2 onClick={handleClick}>{godName}</h2>
       </div>
     );
   } else if (show === true) {

@@ -16,6 +16,8 @@ const App = () => {
       initialY: 0,
     });
 
+    // canvas.zoomAbs(null, null, null, null, 0.5);
+
     return () => {
       canvas.dispose();
     };
