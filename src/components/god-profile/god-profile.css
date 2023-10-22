@@ -9,6 +9,8 @@ h2 {
   /* background-color: aliceblue; */
   color: white;
 
+  transition: all 0.7s;
+
   /* transition: property duration timing-function delay; */
 
   display: flex;
@@ -18,8 +20,8 @@ h2 {
   /* border: 1px solid white; */
 }
 
-.god-container:hover {
-  transform: scale(1.1);
+.god-container-closed:hover {
+  transform: scale(1.2);
 }
 
 .god-container-closed h2 {

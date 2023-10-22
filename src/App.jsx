@@ -3,7 +3,15 @@ import { render } from "react-dom";
 import panzoom from "panzoom";
 import "./App.css";
 import GodProfile from "./components/god-profile/god-profile";
-import { zeus, dionysus } from "./assets/god-data";
+import {
+  zeus,
+  dionysus,
+  poseidon,
+  hestia,
+  hera,
+  demeter,
+  hades,
+} from "./assets/god-data";
 import Line from "./components/line/line";
 
 const App = () => {
@@ -45,22 +53,40 @@ const App = () => {
         <Line value={"cornerRight"} />
 
         <GodProfile
+          godName={hades.godName}
+          godTitle={hades.godTitle}
+          godInfo={hades.info}
+          cssClass={hades.cssClass}
+        />
+        <div className="div"></div>
+        <GodProfile
+          godName={poseidon.godName}
+          godTitle={poseidon.godTitle}
+          godInfo={poseidon.info}
+        />
+        <div className="div"></div>
+        <GodProfile
+          godName={hestia.godName}
+          godTitle={hestia.godTitle}
+          godInfo={hestia.info}
+        />
+        <div className="div"></div>
+        <GodProfile
+          godName={demeter.godName}
+          godTitle={demeter.godTitle}
+          godInfo={demeter.info}
+        />
+        <div className="div"></div>
+        <GodProfile
           godName={zeus.godName}
           godTitle={zeus.godTitle}
           godInfo={zeus.info}
-          cssClass={zeus.cssClass}
         />
         <div className="div"></div>
         <GodProfile
-          godName={dionysus.godName}
-          godTitle={dionysus.godTitle}
-          godInfo={dionysus.info}
-        />
-        <div className="div"></div>
-        <GodProfile
-          godName={dionysus.godName}
-          godTitle={dionysus.godTitle}
-          godInfo={dionysus.info}
+          godName={hera.godName}
+          godTitle={hera.godTitle}
+          godInfo={hera.info}
         />
         <Line value={"across"} />
         <Line value={"leftAndUp"} />
