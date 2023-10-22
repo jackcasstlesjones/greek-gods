@@ -24,3 +24,12 @@
   top: 0;
   left: 50%;
 }
+
+.down-half {
+  background-color: white;
+  height: 50.5%;
+  width: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
