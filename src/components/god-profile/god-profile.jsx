@@ -4,13 +4,7 @@ import { useState } from "react";
 import zeusImg from "../../assets/imgs/zeus.webp";
 import dionysusImg from "../../assets/imgs/dionysus.webp";
 
-export default function GodProfile({
-  godName,
-  godTitle,
-  godInfo,
-  cssClass,
-  imgSrc,
-}) {
+export default function GodProfile({ godName, godTitle, godInfo, cssClass }) {
   const [show, setShow] = useState(false);
 
   let img;
@@ -35,11 +29,7 @@ export default function GodProfile({
     );
   } else if (show === true) {
     return (
-      <div
-        onMouseLeave={handleClick}
-        onClick={handleClick}
-        className={`god-container-open ${cssClass}`}
-      >
+      <div className={`god-container-open ${cssClass}`}>
         <div className="left-side">
           <h2>
             {godName}, {godTitle}
@@ -67,6 +57,22 @@ export default function GodProfile({
         </div>
         <div className="right-side">
           <img className="god-img" src={img} alt="" />
+          <button onClick={handleClick} className="close-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={3}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
         </div>
       </div>
     );

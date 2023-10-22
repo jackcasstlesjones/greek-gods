@@ -45,7 +45,8 @@ const App = () => {
           godTitle={dionysus.godTitle}
           godInfo={dionysus.info}
         />
-        <Line />
+        <Line value={"across"} />
+        <Line value={"leftAndUp"} />
 
         <GodProfile />
         <GodProfile />
