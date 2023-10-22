@@ -1,0 +1,14 @@
+body {
+  background-color: coral;
+}
+
+.tree {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  height: 100vh;
+  width: 100%;
+
+  cursor: grab;
+  border: white 1px solid;
+}
