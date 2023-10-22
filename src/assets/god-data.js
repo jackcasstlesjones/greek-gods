@@ -34,13 +34,13 @@ const dionysus = new God(
 
 const hestia = new God(
   "Hestia",
-  "God of the Heart",
+  "Goddess of the Hearh",
   "HESTIA was the virgin goddess of the hearth (both private and municipal) and the home. As the goddess of the family hearth she also presided over the cooking of bread and the preparation of the family meal. Hestia was also the goddess of the sacrificial flame and received a share of every sacrifice to the gods. The cooking of the communal feast of sacrificial meat was naturally a part of her domain."
 );
 
 const demeter = new God(
   "Demeter",
-  "God of Agriculture",
+  "Goddess of Agriculture",
   "DEMETER was the Olympian goddess of agriculture, grain and bread who sustained mankind with the earth's rich bounty. She presided over the foremost of the Mystery Cults which promised its intiates the path to a blessed afterlife in the realm of Elysium. Demeter was depicted as a mature woman, often wearing a crown and bearing sheafs of wheat or a cornucopia (horn of plenty), and a torch."
 );
 
