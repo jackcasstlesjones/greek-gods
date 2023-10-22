@@ -4,12 +4,13 @@ class God {
     this.info = info;
     this.family = family;
     this.cssClass = cssClass;
+    this.show = false;
   }
 }
 
 const zeus = new God(
   "Zeus",
-  "Zeus (/zjuːs/; Ancient Greek: Ζεύς)[a] is the sky and thunder god in ancient Greek religion, who rules as king of the gods on Mount Olympus.",
+  "ZEUS was the King of the Gods and the god of the sky, weather, law and order, destiny and fate, and kingship. He was depicted as a regal, mature man with a sturdy figure and dark beard. His usual attributes were a lightning bolt, a royal sceptre and an eagle.",
   "Olympus",
   "span-five"
 );
