@@ -4,7 +4,7 @@ import { useState } from "react";
 import zeusImg from "../../assets/imgs/zeus.webp";
 import dionysusImg from "../../assets/imgs/dionysus.webp";
 
-export default function GodProfile({ godName, godTitle, godInfo, cssClass }) {
+export default function GodProfile({ godName, godTitle, godInfo }) {
   const [show, setShow] = useState(false);
 
   let img;
@@ -23,13 +23,13 @@ export default function GodProfile({ godName, godTitle, godInfo, cssClass }) {
   };
   if (show === false) {
     return (
-      <div className={`god-container-closed ${cssClass}`}>
+      <div className={`god-container-closed`}>
         <h2 onClick={handleClick}>{godName}</h2>
       </div>
     );
   } else if (show === true) {
     return (
-      <div className={`god-container-open ${cssClass}`}>
+      <div className={`god-container-open`}>
         <div className="left-side">
           <h2>
             {godName}, {godTitle}

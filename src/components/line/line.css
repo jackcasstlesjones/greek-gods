@@ -16,6 +16,14 @@
   width: 50%;
 }
 
+.right-half {
+  background-color: white;
+  height: 2px;
+  width: 50%;
+  position: absolute;
+  right: 0;
+}
+
 .up-half {
   background-color: white;
   height: 50.5%;

@@ -32,6 +32,18 @@ const App = () => {
       }}
     >
       <div className="tree" ref={canvasRef}>
+        <Line value={"cornerLeft"} />
+        <Line value={"across"} />
+        <Line value={"connectDown"} />
+        <Line value={"across"} />
+        <Line value={"connectDown"} />
+        <Line value={"across"} />
+        <Line value={"connectDown"} />
+        <Line value={"across"} />
+        <Line value={"connectDown"} />
+        <Line value={"across"} />
+        <Line value={"cornerRight"} />
+
         <GodProfile
           godName={zeus.godName}
           godTitle={zeus.godTitle}
@@ -39,16 +51,20 @@ const App = () => {
           cssClass={zeus.cssClass}
         />
         <div className="div"></div>
-        <div className="div"></div>
-        <Line value={"across"} />
         <GodProfile
           godName={dionysus.godName}
           godTitle={dionysus.godTitle}
           godInfo={dionysus.info}
         />
+        <div className="div"></div>
+        <GodProfile
+          godName={dionysus.godName}
+          godTitle={dionysus.godTitle}
+          godInfo={dionysus.info}
+        />
+        <Line value={"across"} />
         <Line value={"leftAndUp"} />
         <Line value={"across"} />
-        <Line value={"connectDown"} />
         <GodProfile />
         <GodProfile />
         <GodProfile />

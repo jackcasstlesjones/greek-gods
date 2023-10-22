@@ -26,6 +26,24 @@ export default function Line({ value }) {
           <div className="down-half"></div>
         </>
       )}
+      {value === "cornerLeft" && (
+        <>
+          <div className="right-half"></div>
+          <div className="down-half"></div>
+        </>
+      )}
+      {value === "cornerRight" && (
+        <>
+          <div className="left-half"></div>
+          <div className="down-half"></div>
+        </>
+      )}
+      {value === "connectDown" && (
+        <>
+          <div className="across"></div>
+          <div className="down-half"></div>
+        </>
+      )}
     </div>
   );
 }
