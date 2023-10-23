@@ -63,7 +63,18 @@ const App = () => {
         <Line value={"connectDown"} />
         <Line value={"across"} />
         <Line value={"cornerRight"} />
-
+        <Line value={"vertical"} />
+        <div className="div"></div>
+        <Line value={"vertical"} />
+        <div className="div"></div>
+        <Line value={"vertical"} />
+        <div className="div"></div>
+        <Line value={"vertical"} />
+        <div className="div"></div>
+        <Line value={"vertical"} />
+        <div className="div"></div>
+        <Line value={"vertical"} />
+        {/*            *************************          */}
         <GodProfile
           godName={hades.godName}
           godTitle={hades.godTitle}
@@ -96,7 +107,6 @@ const App = () => {
           componentOpen={componentOpen}
         />
         <div className="div"></div>
-
         <GodProfile
           godName={zeus.godName}
           godTitle={zeus.godTitle}
@@ -115,17 +125,32 @@ const App = () => {
         <div className="div"></div>
         <Line value={"cornerLeft"} />
         <Line value={"across"} />
-
         <Line value={"connectDown"} />
         <Line value={"connectDown"} />
-
         <Line value={"connectDown"} />
         <Line value={"connectDown"} />
         <Line value={"across"} />
         <Line value={"leftAndUpAndDown"} />
         <Line value={"vertical"} />
-
         <Line value={"vertical"} />
+        <div className="div"></div>
+        <Line value={"vertical"} />
+        <div className="div"></div>
+        <Line value={"vertical"} />
+        {/********************************/}
+        <Line value={"vertical"} />
+        <Line value={"vertical"} />
+        <Line value={"vertical"} />
+        <div className="div"></div>
+        <Line value={"vertical"} />
+        <Line value={"vertical"} />
+        <GodProfile
+          godName={hephaestus.godName}
+          godTitle={hephaestus.godTitle}
+          godInfo={hephaestus.info}
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
+        />
         <div className="div"></div>
         <Line value={"vertical"} />
         <div className="div"></div>
@@ -136,7 +161,7 @@ const App = () => {
           godInfo={artemis.info}
           handleComponentChange={handleComponentChange}
           componentOpen={componentOpen}
-        />
+        />{" "}
         <Line value={"vertical"} />
         <GodProfile
           godName={apollo.godName}
@@ -154,13 +179,18 @@ const App = () => {
           componentOpen={componentOpen}
         />
         <Line value={"vertical"} />
-        <GodProfile
-          godName={hephaestus.godName}
-          godTitle={hephaestus.godTitle}
-          godInfo={hephaestus.info}
-          handleComponentChange={handleComponentChange}
-          componentOpen={componentOpen}
-        />
+        <div className="div"></div>
+        <div className="div"></div>
+        <Line value={"vertical"} />
+        <div className="div"></div>
+        <Line value={"vertical"} />
+        <div className="div"></div>
+        <Line value={"vertical"} />
+        <div className="div"></div>
+        <div className="div"></div>
+        <div className="div"></div>
+        <div className="div"></div>
+        <div className="div"></div>
         <div className="div"></div>
         <GodProfile
           godName={aphrodite.godName}
@@ -177,6 +207,18 @@ const App = () => {
           handleComponentChange={handleComponentChange}
           componentOpen={componentOpen}
         />
+        <div className="div"></div>
+        <GodProfile
+          godName={dionysus.godName}
+          godTitle={dionysus.godTitle}
+          godInfo={dionysus.info}
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
+        />
+        <div className="div"></div>
+        <div className="div"></div>
+        <div className="div"></div>
+        <GodProfile godName={"hephy"} />
       </div>
     </div>
   );
