@@ -91,20 +91,6 @@ const App = () => {
         <Line value={"across"} />
         <Line value={"leftAndUp"} />
         <Line value={"across"} />
-        <GodProfile />
-        <GodProfile />
-        <GodProfile />
-        <GodProfile />
-        <GodProfile />
-        <GodProfile />
-        <GodProfile />
-        <GodProfile />
-        <GodProfile />
-        <GodProfile />
-        <GodProfile />
-        <GodProfile />
-        <GodProfile />
-        <GodProfile />
       </div>
     </div>
   );
