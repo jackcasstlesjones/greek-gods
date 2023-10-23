@@ -17,7 +17,6 @@ export default function GodProfile({
   godInfo,
   handleComponentChange,
   componentOpen,
-  canvas,
 }) {
   const [show, setShow] = useState(false);
 
