@@ -26,8 +26,11 @@ const App = () => {
   useEffect(() => {
     const canvas = panzoom(canvasRef.current, {
       autocenter: true,
-      initialX: 0,
-      initialY: 0,
+      initialX: 250,
+      initialY: -50,
+      initialZoom: 0.8,
+      maxZoom: 2,
+      minZoom: 0.5,
     });
 
     // canvas.zoomAbs(null, null, null, null, 0.5);
