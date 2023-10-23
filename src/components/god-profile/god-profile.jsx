@@ -58,7 +58,11 @@ export default function GodProfile({
         <div className="modal"></div>
         <div className={show === true ? `modal open` : "closed"}>
           <div className="left-side">
-            <h2>
+            <h2
+              className={
+                show === true ? "open-godname open-text" : "closed-text"
+              }
+            >
               {godName}, {godTitle}
             </h2>
             <div
@@ -87,7 +91,12 @@ export default function GodProfile({
           </div>
           <div className="right-side">
             <img className="god-img" src={img} alt="" />
-            <button onClick={handleCloseButtonClick} className="close-button">
+            <button
+              onClick={handleCloseButtonClick}
+              className={
+                show === true ? "close-button open-text" : "closed-text"
+              }
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

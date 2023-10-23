@@ -58,7 +58,7 @@ const hera = new God(
 
 const athena = new God(
   "Athena",
-  "Goddess of Heroic Wisdom",
+  "Goddess of Wisdom",
   "ATHENA was the Olympian goddess of wisdom and good counsel, war, the defence of towns, heroic endeavour, weaving, pottery and various other crafts. She was depicted as a stately woman armed with a shield and spear, and wearing a long robe, crested helm, and the famed aigis--a snake-trimmed cape adorned with the monstrous visage of the Gorgon Medousa (Medusa)."
 );
 
