@@ -47,7 +47,7 @@ const demeter = new God(
 const hades = new God(
   "Hades",
   "God of the Underworld",
-  "HAIDES (Hades) was the king of the underworld and god of the dead. He presided over funeral rites and defended the right of the dead to due burial. Haides was also the god of the hidden wealth of the earth, from the fertile soil with nourished the seed-grain, to the mined wealth of gold, silver and other metals."
+  "HADES was the king of the underworld and god of the dead. He presided over funeral rites and defended the right of the dead to due burial. Haides was also the god of the hidden wealth of the earth, from the fertile soil with nourished the seed-grain, to the mined wealth of gold, silver and other metals."
 );
 
 const hera = new God(
@@ -56,4 +56,53 @@ const hera = new God(
   "HERA was the Olympian queen of the gods, and the goddess of marriage, women, the sky and the stars of heaven. She was usually depicted as a beautiful woman wearing a crown and holding a royal, lotus-tipped sceptre, and sometimes accompanied by a lion, cuckoo or hawk."
 );
 
-export { zeus, dionysus, poseidon, hestia, demeter, hades, hera };
+const athena = new God(
+  "Athena",
+  "Goddess of Heroic Wisdom",
+  "ATHENA was the Olympian goddess of wisdom and good counsel, war, the defence of towns, heroic endeavour, weaving, pottery and various other crafts. She was depicted as a stately woman armed with a shield and spear, and wearing a long robe, crested helm, and the famed aigis--a snake-trimmed cape adorned with the monstrous visage of the Gorgon Medousa (Medusa)."
+);
+
+const apollo = new God(
+  "Apollo",
+  "God of Prophecy",
+  "APOLLO was the Olympian god of prophecy and oracles, music, song and poetry, archery, healing, plague and disease, and the protection of the young. He was depicted as a handsome, beardless youth with long hair and attributes such as a wreath and branch of laurel, bow and quiver of arrows, raven, and lyre."
+);
+
+const artemis = new God(
+  "Artemis",
+  "Goddess of the Hunt",
+  "ARTEMIS was the Olympian goddess of hunting, the wilderness and wild animals. She was also a goddess of childbirth, and the protectress of the girl child up to the age of marriage--her twin brother Apollo was similarly the protector of the boy child. Together the two gods were also bringers of sudden death and disease--Artemis targetted women and girls, Apollo men and boys. In ancient art Artemis was usually depicted as a girl or young maiden with a hunting bow and quiver of arrows."
+);
+
+const hermes = new God(
+  "Hermes",
+  "Messenger of the Gods",
+  "HERMES was the Olympian god of herds and flocks, travellers and hospitality, roads and trade, thievery and cunning, heralds and diplomacy, language and writing, athletic contests and gymnasiums, astronomy and astrology. He was the herald and personal messenger of Zeus, King of the Gods, and also the guide of the dead who led souls down into the underworld. Hermes was depicted as either a handsome and athletic, beardless youth or as an older, bearded man, with winged boots and a herald's wand."
+);
+
+const hephaestus = new God(
+  "Hephaestus",
+  "God of Blacksmiths",
+  "HEPHAISTOS (Hephaestus) was the Olympian god of fire, smiths, craftsmen, metalworking, stonemasonry and sculpture. He was depicted as a bearded man holding a hammer and tongs--the tools of a smith--and sometimes riding a donkey."
+);
+
+const aphrodite = new God(
+  "Aphrodite",
+  "Goddess of Love",
+  "APHRODITE was the Olympian goddess of love, beauty, pleasure and procreation. She was depicted as a beautiful woman often accompanied by the winged godling Eros (Love). Her attributes included a dove, apple, scallop shell and mirror. In classical sculpture and fresco she was usually depicted nude."
+);
+export {
+  zeus,
+  dionysus,
+  poseidon,
+  hestia,
+  demeter,
+  hades,
+  hera,
+  artemis,
+  apollo,
+  athena,
+  hermes,
+  hephaestus,
+  aphrodite,
+};

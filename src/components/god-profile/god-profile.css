@@ -67,11 +67,11 @@ h2 {
   z-index: 999;
   transition: height 0.3s ease-in 0s, width 1s ease-in 0.3s;
   color: black;
-  /* transition: color 5s, width 1s ease-out 0.4s, height 0.5s; */
+
   position: absolute;
   top: 0px;
   background-color: white;
-  /* border-radius: 4px; */
+
   height: 400px;
   width: 655px;
 }

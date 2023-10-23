@@ -11,7 +11,13 @@ import hestiaImg from "../../assets/imgs/hestia.jpg";
 import athenaImg from "../../assets/imgs/athena.jpeg";
 import heraImg from "../../assets/imgs/hera.webp";
 
-export default function GodProfile({ godName, godTitle, godInfo }) {
+export default function GodProfile({
+  godName,
+  godTitle,
+  godInfo,
+  handleComponentChange,
+  componentOpen,
+}) {
   const [show, setShow] = useState(false);
 
   const godImages = {
@@ -32,11 +38,14 @@ export default function GodProfile({ godName, godTitle, godInfo }) {
     setShow(!value);
   }
 
-  const handleClick = () => {
+  const handleCloseButtonClick = () => {
+    if (!componentOpen) return;
+    handleComponentChange();
     switchBoolean(show);
   };
   const handleOpen = () => {
-    if (show == true) return;
+    if (componentOpen) return;
+    handleComponentChange();
     switchBoolean(show);
   };
 
@@ -78,7 +87,7 @@ export default function GodProfile({ godName, godTitle, godInfo }) {
           </div>
           <div className="right-side">
             <img className="god-img" src={img} alt="" />
-            <button onClick={handleClick} className="close-button">
+            <button onClick={handleCloseButtonClick} className="close-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { render } from "react-dom";
 import panzoom from "panzoom";
 import "./App.css";
@@ -11,6 +11,12 @@ import {
   hera,
   demeter,
   hades,
+  artemis,
+  apollo,
+  athena,
+  hermes,
+  hephaestus,
+  aphrodite,
 } from "./assets/god-data";
 import Line from "./components/line/line";
 
@@ -30,6 +36,12 @@ const App = () => {
       canvas.dispose();
     };
   }, []);
+
+  const [componentOpen, setComponentOpen] = useState(false);
+
+  const handleComponentChange = () => {
+    setComponentOpen((prevState) => !prevState);
+  };
 
   return (
     <div
@@ -56,25 +68,32 @@ const App = () => {
           godName={hades.godName}
           godTitle={hades.godTitle}
           godInfo={hades.info}
-          cssClass={hades.cssClass}
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
         />
         <div className="div"></div>
         <GodProfile
           godName={poseidon.godName}
           godTitle={poseidon.godTitle}
           godInfo={poseidon.info}
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
         />
         <div className="div"></div>
         <GodProfile
           godName={hestia.godName}
           godTitle={hestia.godTitle}
           godInfo={hestia.info}
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
         />
         <div className="div"></div>
         <GodProfile
           godName={demeter.godName}
           godTitle={demeter.godTitle}
           godInfo={demeter.info}
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
         />
         <div className="div"></div>
 
@@ -82,12 +101,16 @@ const App = () => {
           godName={zeus.godName}
           godTitle={zeus.godTitle}
           godInfo={zeus.info}
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
         />
         <Line value={"connectDown"} />
         <GodProfile
           godName={hera.godName}
           godTitle={hera.godTitle}
           godInfo={hera.info}
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
         />
         <div className="div"></div>
         <Line value={"cornerLeft"} />
@@ -107,17 +130,53 @@ const App = () => {
         <Line value={"vertical"} />
         <div className="div"></div>
         <Line value={"vertical"} />
-        <GodProfile godName={"Artemis"} />
+        <GodProfile
+          godName={artemis.godName}
+          godTitle={artemis.godTitle}
+          godInfo={artemis.info}
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
+        />
         <Line value={"vertical"} />
-        <GodProfile godName={"Apollo"} />
+        <GodProfile
+          godName={apollo.godName}
+          godTitle={apollo.godTitle}
+          godInfo={apollo.info}
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
+        />
         <div className="div"></div>
-        <GodProfile godName={"Athena"} />
+        <GodProfile
+          godName={athena.godName}
+          godTitle={athena.godTitle}
+          godInfo={athena.info}
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
+        />
         <Line value={"vertical"} />
-        <GodProfile godName={"Hephaestus"} />
+        <GodProfile
+          godName={hephaestus.godName}
+          godTitle={hephaestus.godTitle}
+          godInfo={hephaestus.info}
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
+        />
         <div className="div"></div>
-        <GodProfile godName={"Aphrodite"} />
+        <GodProfile
+          godName={aphrodite.godName}
+          godTitle={aphrodite.godTitle}
+          godInfo={aphrodite.info}
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
+        />
         <div className="div"></div>
-        <GodProfile godName={"Hermes"} />
+        <GodProfile
+          godName={hermes.godName}
+          godTitle={hermes.godTitle}
+          godInfo={hermes.info}
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
+        />
       </div>
     </div>
   );
