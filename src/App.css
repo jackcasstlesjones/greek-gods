@@ -124,7 +124,8 @@ table {
 }
 
 body {
-  background-color: black;
+  background-color: #000031;
+  cursor: grab;
   font-family: "Cormorant", serif;
 }
 
@@ -132,8 +133,10 @@ body {
   display: grid;
   grid-template-columns: repeat(11, 1fr);
 
-  height: 100vh;
-  width: 100%;
+  /* justify-items: center; */
+
+  /* height: 100vh; */
+  width: 170%;
 
   cursor: grab;
   /* border: white 1px solid; */

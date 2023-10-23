@@ -43,9 +43,9 @@ const App = () => {
         <Line value={"cornerLeft"} />
         <Line value={"across"} />
         <Line value={"connectDown"} />
-        <Line value={"across"} />
+        <Line value={"connectUp"} />
         <Line value={"connectDown"} />
-        <Line value={"across"} />
+        <Line value={"connectUp"} />
         <Line value={"connectDown"} />
         <Line value={"across"} />
         <Line value={"connectDown"} />
@@ -77,20 +77,47 @@ const App = () => {
           godInfo={demeter.info}
         />
         <div className="div"></div>
+
         <GodProfile
           godName={zeus.godName}
           godTitle={zeus.godTitle}
           godInfo={zeus.info}
         />
-        <div className="div"></div>
+        <Line value={"connectDown"} />
         <GodProfile
           godName={hera.godName}
           godTitle={hera.godTitle}
           godInfo={hera.info}
         />
+        <div className="div"></div>
+        <Line value={"cornerLeft"} />
         <Line value={"across"} />
-        <Line value={"leftAndUp"} />
+
+        <Line value={"connectDown"} />
+        <Line value={"connectDown"} />
+
+        <Line value={"connectDown"} />
+        <Line value={"connectDown"} />
         <Line value={"across"} />
+        <Line value={"leftAndUpAndDown"} />
+        <Line value={"vertical"} />
+
+        <Line value={"vertical"} />
+        <div className="div"></div>
+        <Line value={"vertical"} />
+        <div className="div"></div>
+        <Line value={"vertical"} />
+        <GodProfile godName={"Artemis"} />
+        <Line value={"vertical"} />
+        <GodProfile godName={"Apollo"} />
+        <div className="div"></div>
+        <GodProfile godName={"Athena"} />
+        <Line value={"vertical"} />
+        <GodProfile godName={"Hephaestus"} />
+        <div className="div"></div>
+        <GodProfile godName={"Aphrodite"} />
+        <div className="div"></div>
+        <GodProfile godName={"Hermes"} />
       </div>
     </div>
   );

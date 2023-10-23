@@ -44,6 +44,23 @@ export default function Line({ value }) {
           <div className="down-half"></div>
         </>
       )}
+      {value === "leftAndUpAndDown" && (
+        <>
+          <div className="left-half"></div>
+          <div className="vertical"></div>
+        </>
+      )}
+      {value === "vertical" && (
+        <>
+          <div className="vertical"></div>
+        </>
+      )}
+      {value === "connectUp" && (
+        <>
+          <div className="up-half"></div>
+          <div className="across"></div>
+        </>
+      )}
     </div>
   );
 }

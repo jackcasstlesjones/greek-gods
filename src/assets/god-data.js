@@ -34,7 +34,7 @@ const dionysus = new God(
 
 const hestia = new God(
   "Hestia",
-  "Goddess of the Hearh",
+  "Goddess of the Hearth",
   "HESTIA was the virgin goddess of the hearth (both private and municipal) and the home. As the goddess of the family hearth she also presided over the cooking of bread and the preparation of the family meal. Hestia was also the goddess of the sacrificial flame and received a share of every sacrifice to the gods. The cooking of the communal feast of sacrificial meat was naturally a part of her domain."
 );
 

@@ -3,17 +3,31 @@ import "./god-profile.css";
 import { useState } from "react";
 import zeusImg from "../../assets/imgs/zeus.webp";
 import dionysusImg from "../../assets/imgs/dionysus.webp";
+import hadesImg from "../../assets/imgs/hades.webp";
+import demeterImg from "../../assets/imgs/demeter.webp";
+import aphroditeImg from "../../assets/imgs/aphrodite.jpeg";
+import poseidonImg from "../../assets/imgs/poseidon.jpeg";
+import hestiaImg from "../../assets/imgs/hestia.jpg";
+import athenaImg from "../../assets/imgs/athena.jpeg";
+import heraImg from "../../assets/imgs/hera.webp";
 
 export default function GodProfile({ godName, godTitle, godInfo }) {
   const [show, setShow] = useState(false);
 
-  let img;
+  const godImages = {
+    Zeus: zeusImg,
+    Dionysus: dionysusImg,
+    Hades: hadesImg,
+    Demeter: demeterImg,
+    Aphrodite: aphroditeImg,
+    Poseidon: poseidonImg,
+    Hestia: hestiaImg,
+    Athena: athenaImg,
+    Hera: heraImg,
+  };
 
-  if (godName === "Zeus") {
-    img = zeusImg;
-  } else if (godName === "Dionysus") {
-    img = dionysusImg;
-  }
+  const img = godImages[godName];
+
   function switchBoolean(value) {
     setShow(!value);
   }
@@ -29,7 +43,9 @@ export default function GodProfile({ godName, godTitle, godInfo }) {
   return (
     <>
       <div className={`god-container`}>
-        <h2 onClick={handleOpen}>{godName}</h2>
+        <h2 className="closed-godname" onClick={handleOpen}>
+          {godName}
+        </h2>
         <div className="modal"></div>
         <div className={show === true ? `modal open` : "closed"}>
           <div className="left-side">
