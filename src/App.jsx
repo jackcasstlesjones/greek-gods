@@ -65,7 +65,6 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
-
         {/* ↓↓↓ ZEUS LINE, AFTER THIS THERE SHOULD BE 16 ELEMENTS */}
         <GodProfile
           handleComponentChange={handleComponentChange}
@@ -87,7 +86,6 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
-
         {/** ROW 2 */}
         <div className="space"></div>
         <div className="space"></div>
@@ -100,7 +98,6 @@ const App = () => {
         <div className="space"></div>
         <Line value={"cornerLeft"} />
         <Line value={"across"} />
-
         {/** ↓↓↓ ZEUS LINE */}
         <Line value={"connectUp"} />
         <Line value={"across"} />
@@ -118,7 +115,6 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
-
         {/**ROW 3 */}
         <div className="space"></div>
         <div className="space"></div>
@@ -135,7 +131,6 @@ const App = () => {
           godName={"Nyx"}
         />
         <Line value="across" />
-
         {/** ↓↓↓ ZEUS LINE */}
         <Line value="connectDown" />
         <Line value="across" />
@@ -157,7 +152,6 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
-
         {/** ROW 4*/}
         <div className="space"></div>
         <div className="space"></div>
@@ -170,7 +164,6 @@ const App = () => {
         <div className="space"></div>
         <Line value={"cornerLeft"} />
         <Line value={"across"} />
-
         {/** ↓↓↓ ZEUS LINE */}
         <Line value={"connectUp"} />
         <Line value={"across"} />
@@ -188,7 +181,6 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
-
         {/**ROW 5 */}
         <div className="space"></div>
         <div className="space"></div>
@@ -205,7 +197,6 @@ const App = () => {
           godName={"Aither"}
         />
         <Line value="across" />
-
         {/** ↓↓↓ ZEUS LINE */}
         <Line value="connectDown" />
         <Line value="across" />
@@ -227,7 +218,6 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
-
         {/**ROW 6 */}
         <div className="space"></div>
         <div className="space"></div>
@@ -240,7 +230,6 @@ const App = () => {
         <div className="space"></div>
         <Line value={"cornerLeft"} />
         <Line value={"across"} />
-
         {/** ↓↓↓ ZEUS LINE */}
         <Line value={"connectUp"} />
         <Line value={"across"} />
@@ -258,7 +247,6 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
-
         {/**ROW 7 */}
         <div className="space"></div>
         <div className="space"></div>
@@ -275,7 +263,6 @@ const App = () => {
           godName={"Gaia"}
         />
         <Line value="across" />
-
         {/** ↓↓↓ ZEUS LINE */}
         <Line value="connectDown" />
         <Line value="across" />
@@ -297,7 +284,6 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
-
         {/**ROW 8 */}
         <div className="space"></div>
         <div className="space"></div>
@@ -310,7 +296,6 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
-
         {/** ↓↓↓ ZEUS LINE */}
         <Line value={"vertical"} />
         <div className="space"></div>
@@ -328,7 +313,6 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
-
         {/**ROW 9 */}
         <div className="space"></div>
         <div className="space"></div>
@@ -341,7 +325,6 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
-
         {/** ↓↓↓ ZEUS LINE */}
         <Line value={"vertical"} />
         <div className="space"></div>
@@ -363,7 +346,6 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
-
         {/**ROW 10 */}
         <Line value={"cornerLeft"} />
         <Line value={"across"} />
@@ -376,7 +358,6 @@ const App = () => {
         <Line value={"connectDown"} />
         <Line value={"across"} />
         <Line value={"connectDown"} />
-
         {/**ZEUS LINE */}
         <Line value={"connectFour"} />
         <Line value={"connectDown"} />
@@ -394,7 +375,6 @@ const App = () => {
         <Line value={"cornerRight"} />
         <div className="space"></div>
         <div className="space"></div>
-
         {/**ROW 11 */}
         <GodProfile
           handleComponentChange={handleComponentChange}
@@ -431,7 +411,6 @@ const App = () => {
           componentOpen={componentOpen}
           godName={"Kronos"}
         />
-
         {/**ZEUS LINE */}
         <Line value={"connectFour"} />
         <GodProfile
@@ -481,7 +460,6 @@ const App = () => {
           componentOpen={componentOpen}
           godName={"Eury"}
         />
-
         {/**ROW 12 */}
         <div className="space"></div>
         <div className="space"></div>
@@ -494,7 +472,6 @@ const App = () => {
         <Line value={"leftAndUpAndDown"} />
         <div className="space"></div>
         <div className="space"></div>
-
         {/*ZEUS LINE */}
         <Line value={"vertical"} />
         <div className="space"></div>
@@ -512,11 +489,10 @@ const App = () => {
         <Line value={"cornerLeft"} />
         <Line value={"connectFour"} />
         <Line value={"cornerRight"} />
-
         {/** ROW 13 */}
         <div className="space"></div>
         <div className="space"></div>
-        <GodProfile godName={"god"} />
+        <GodProfile godName={"Metis"} />
         <Line value={"vertical"} />
         <GodProfile godName={"god"} />
         <div className="space"></div>
@@ -529,7 +505,6 @@ const App = () => {
         <Line value={"vertical"} />
         <div className="space"></div>
         <div className="space"></div>
-
         {/**ZEUS LINE */}
         <Line value={"vertical"} />
         <div className="space"></div>
@@ -549,6 +524,215 @@ const App = () => {
         <Line value={"vertical"} />
 
         {/** ROW 14 */}
+        <div className="space"></div>
+        <div className="space"></div>
+        <Line id="king-line" value={"vertical"} />
+        <GodProfile godName={"Amphitrite"} />
+        <div className="space"></div>
+        <div className="space"></div>
+        <GodProfile godName={"godd"} />
+        <div className="space"></div>
+        <GodProfile godName={"Atlas"} />
+        <Line value={"connectDown"} />
+        <GodProfile godName={"atlaswifey"} />
+
+        {/** ZEUS LINE */}
+        <Line value={"vertical"} />
+        <Line id="king-line" value={"cornerLeft"} />
+        <Line value={"connectDown"} />
+        <Line value={"connectUp"} />
+        <Line value={"cornerRight"} />
+        <div className="space"></div>
+        <GodProfile godName={"Helios"} />
+        <div className="space"></div>
+        <Line id="king-line" value={"cornerLeft"} />
+        <GodProfile godName={"Leto"} />
+        <div className="space"></div>
+        <GodProfile godName={"goddd"} />
+        <Line value={"connectDown"} />
+        <GodProfile godName={"g0ddd"} />
+        <div className="space"></div>
+        <GodProfile godName={"good"} />
+
+        {/** ROW 15 */}
+        <div className="space"></div>
+        <div className="space"></div>
+        <Line id="king-line" value={"vertical"} />
+        <Line value={"vertical"} />
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <Line value={"cornerLeft"} />
+        <Line value={"connectUp"} />
+        <Line value={"cornerRight"} />
+
+        {/** ZEUS LINE */}
+        <Line value={"vertical"} />
+        <Line id="king-line" value={"vertical"} />
+        <GodProfile godName={"The Moirai"} />
+        <div className="space"></div>
+        <GodProfile godName={"The Horae"} />
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <Line id="king-line" value={"vertical"} />
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <GodProfile godName={"Hecate"} />
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+
+        {/** ROW 16 */}
+        <div className="space"></div>
+        <div className="space"></div>
+        <Line id="king-line" value={"vertical"} />
+        <GodProfile godName={"Triton"} />
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <GodProfile godName={"Triton"} />
+        <Line id="king-line" value={"cornerRight"} />
+        <GodProfile godName={"Triton"} />
+
+        {/**ZEUS LINE */}
+        <Line value={"vertical"} />
+        <Line id="king-line" value={"vertical"} />
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <Line id="king-line" value={"vertical"} />
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+
+        {/**ROW 17 */}
+        <div className="space"></div>
+        <div className="space"></div>
+        <Line id="king-line" value={"vertical"} />
+        <Line value={"vertical"} />
+        <Line value={"cornerLeft"} />
+        <Line value={"across"} />
+        <Line value={"connectDown"} />
+        <Line value={"across"} />
+        <Line value={"connectDown"} />
+        <Line value={"connectFour"} />
+        <Line value={"across"} />
+
+        {/**ZEUS LINE */}
+        <Line value={"connectFour"} />
+        <Line value={"connectFour"} />
+        <Line value={"across"} />
+        <Line value={"across"} />
+        <Line value={"connectDown"} />
+        <Line value={"across"} />
+        <Line value={"across"} />
+        <Line value={"across"} />
+        <Line value={"connectFour"} />
+        <Line value={"cornerRight"} />
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+
+        {/**  ROW 18 */}
+        <div className="space"></div>
+        <div className="space"></div>
+        <Line id="king-line" value={"vertical"} />
+        <Line value={"rightAndUp"} />
+        <GodProfile godName={"Poseidon"} />
+        <div className="space"></div>
+        <GodProfile godName={"Poseidon"} />
+        <div className="space"></div>
+        <GodProfile godName={"Hera"} />
+        <Line id="king-line" value={"rightAndUp"} />
+        <GodProfile godName={"Hermes"} />
+
+        {/** ZEUS LINE */}
+        <Line value={"vertical"} />
+        <Line id="king-line" value={"vertical"} />
+        <div className="space"></div>
+        <Line value={"cornerLeft"} />
+        <GodProfile godName={"Demeter"} />
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <Line id="king-line" value={"vertical"} />
+        <GodProfile godName={"Hades"} />
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+
+        {/** line 19 */}
+        <div className="space"></div>
+        <div className="space"></div>
+        <Line id="king-line" value={"vertical"} />
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <Line id="king-line" value={"vertical"} />
+        <div className="space"></div>
+        <Line id="king-line" value={"vertical"} />
+
+        {/** ZEUS LINE */}
+        <Line value={"vertical"} />
+        <Line id="king-line" value={"vertical"} />
+        <div className="space"></div>
+        <Line value={"vertical"} />
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <Line id="king-line" value={"vertical"} />
+        <Line value={"vertical"} />
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+
+        {/** LINE 20 */}
+        <div className="space"></div>
+        <div className="space"></div>
+        <Line id="king-line" value={"rightAndUp"} />
+        <Line id="king-line" value={"across"} />
+        <Line id="king-line" value={"across"} />
+        <Line id="king-line" value={"connectDown"} />
+        <Line id="king-line" value={"across"} />
+        <Line id="king-line" value={"across"} />
+        <Line id="king-line" value={"connectFour"} />
+        <Line id="king-line" value={"across"} />
+        <GodProfile godName={"Z"} />
+        <GodProfile godName={"EU"} />
+        <GodProfile godName={"S"} />
+        <Line value={"across"} />
+        <GodProfile godName={"Persephone"} />
+        <Line value={"across"} />
+        <Line value={"across"} />
+        <Line value={"across"} />
+        <Line value={"across"} />
+        <Line id="king-line " value={"connectFour"} />
+        <Line value={"leftAndUp"} />
+
+        {/** SECTION END ****** */}
       </section>
     </div>
   );
