@@ -1,4 +1,4 @@
-import { useSyncExternalStore } from "react";
+import { useSyncExternalStore, useEffect } from "react";
 import "./god-profile.css";
 import { useState } from "react";
 import zeusImg from "../../assets/imgs/zeus.webp";
@@ -19,8 +19,29 @@ export default function GodProfile({
   class2,
   handleComponentChange,
   componentOpen,
+  handleZoomIn,
+  handleZoomOut,
+  getZoomLevel,
+  handlePan,
 }) {
   const [show, setShow] = useState(false);
+
+  const [mouseCoordinates, setMouseCoordinates] = useState({ x: 0, y: 0 });
+
+  const mouseMoveHandler = (event) => {
+    setMouseCoordinates({
+      x: event.clientX,
+      y: event.clientY,
+    });
+    // console.log(mouseCoordinates);
+  };
+
+  useEffect(() => {
+    window.addEventListener("mousemove", mouseMoveHandler);
+    return () => {
+      window.removeEventListener("mousemove", mouseMoveHandler);
+    };
+  }, []);
 
   const godImages = {
     Zeus: zeusImg,
@@ -45,15 +66,21 @@ export default function GodProfile({
     handleComponentChange();
     switchBoolean(show);
   };
-  const handleOpen = () => {
+  const handleOpen = (event) => {
     if (componentOpen) return;
     handleComponentChange();
     switchBoolean(show);
+
+    const element = document.getElementById("tree");
+
+    const zoomLevel = getZoomLevel();
+    console.log(event.clientX);
+    console.log(zoomLevel.x);
   };
 
   return (
     <>
-      <div className={`god-container ${cssClass} `}>
+      <div id={godName} className={`god-container ${cssClass} `}>
         <h2 className={`${class2} closed-godname`} onClick={handleOpen}>
           {godName}
         </h2>

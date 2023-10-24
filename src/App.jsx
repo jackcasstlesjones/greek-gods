@@ -26,10 +26,14 @@ const App = () => {
 
   useEffect(() => {
     const canvas = panzoom(canvasRef.current, {
-      autocenter: true,
-      // initialX: 250,
-      // initialY: -50,
-      // initialZoom: 0.8,
+      // autocenter: true,
+      // bounds: true,
+      // boundsPadding: 0.1,
+      initialX: 7000,
+      initialY: 0,
+      // transformOrigin: { x: 0.5, y: 0.5 },
+
+      // initialZoom: 0.3,
       // maxZoom: 2,
       // minZoom: 0.5,
     });
@@ -41,15 +45,27 @@ const App = () => {
     };
   }, []);
 
-  const handleZoomIn = () => {
+  const handleZoomIn = (xValue, yValue, zoomValue) => {
     if (panzoomRef.current) {
-      panzoomRef.current.smoothZoom(0, 0, 2); // Zooming in
+      panzoomRef.current.smoothZoom(xValue, yValue, zoomValue); // Zooming in
     }
   };
 
-  const handleZoomOut = () => {
+  const handleZoomOut = (xValue, yValue, zoomValue) => {
     if (panzoomRef.current) {
       panzoomRef.current.smoothZoom(0, 0, 0.5); // Zooming out smoothly
+    }
+  };
+
+  const handlePan = (xValue, yValue) => {
+    if (panzoomRef.current) {
+      panzoomRef.current.smoothMoveTo(xValue, yValue);
+    }
+  };
+
+  const getZoomLevel = () => {
+    if (panzoomRef.current) {
+      return panzoomRef.current.getTransform();
     }
   };
 
@@ -69,7 +85,8 @@ const App = () => {
     >
       <button onClick={handleZoomIn}>Zoom In</button>
       <button onClick={handleZoomOut}>Zoom Out</button>
-      <section className="tree" ref={canvasRef}>
+      <button onClick={getZoomLevel}>Get Zoom</button>
+      <section id="tree" className="tree" ref={canvasRef}>
         {/** ROW 1 */}
         <div className="space"></div>
         <div className="space"></div>
@@ -84,6 +101,10 @@ const App = () => {
         <div className="space"></div>
         {/* ↓↓↓ ZEUS LINE, AFTER THIS THERE SHOULD BE 16 ELEMENTS */}
         <GodProfile
+          handleZoomIn={handleZoomIn}
+          handleZoomOut={handleZoomOut}
+          getZoomLevel={getZoomLevel}
+          handlePan={handlePan}
           handleComponentChange={handleComponentChange}
           componentOpen={componentOpen}
           godName="Chaos"
@@ -689,7 +710,15 @@ const App = () => {
         <Line id="king-line" value={"vertical"} />
         <div className="space"></div>
         <Line value={"cornerLeft"} />
-        <GodProfile godName={"DEMETER"} />
+        <GodProfile
+          godName={"DEMETER"}
+          handleZoomIn={handleZoomIn}
+          handleZoomOut={handleZoomOut}
+          getZoomLevel={getZoomLevel}
+          handlePan={handlePan}
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
+        />
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
