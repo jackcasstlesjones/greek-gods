@@ -22,6 +22,7 @@ import Line from "./components/line/line";
 
 const App = () => {
   const canvasRef = useRef(null);
+  const panzoomRef = useRef(null); // Create a ref to hold the panzoom instance
 
   useEffect(() => {
     const canvas = panzoom(canvasRef.current, {
@@ -33,10 +34,24 @@ const App = () => {
       // minZoom: 0.5,
     });
 
+    panzoomRef.current = canvas;
+
     return () => {
       canvas.dispose();
     };
   }, []);
+
+  const handleZoomIn = () => {
+    if (panzoomRef.current) {
+      panzoomRef.current.smoothZoom(0, 0, 2); // Zooming in
+    }
+  };
+
+  const handleZoomOut = () => {
+    if (panzoomRef.current) {
+      panzoomRef.current.smoothZoom(0, 0, 0.5); // Zooming out smoothly
+    }
+  };
 
   const [componentOpen, setComponentOpen] = useState(false);
 
@@ -52,6 +67,8 @@ const App = () => {
         overflow: "hidden",
       }}
     >
+      <button onClick={handleZoomIn}>Zoom In</button>
+      <button onClick={handleZoomOut}>Zoom Out</button>
       <section className="tree" ref={canvasRef}>
         {/** ROW 1 */}
         <div className="space"></div>
