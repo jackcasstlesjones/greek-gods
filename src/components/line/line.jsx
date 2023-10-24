@@ -50,6 +50,12 @@ export default function Line({ value }) {
           <div className="vertical"></div>
         </>
       )}
+      {value === "rightAndUpAndDown" && (
+        <>
+          <div className="right-half"></div>
+          <div className="vertical"></div>
+        </>
+      )}
       {value === "vertical" && (
         <>
           <div className="vertical"></div>
@@ -59,6 +65,14 @@ export default function Line({ value }) {
         <>
           <div className="up-half"></div>
           <div className="across"></div>
+        </>
+      )}
+      {value === "connectFour" && (
+        <>
+          <div className="up-half"></div>
+          <div className="left-half"></div>
+          <div className="down-half"></div>
+          <div className="right-half"></div>
         </>
       )}
     </div>
