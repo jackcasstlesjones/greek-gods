@@ -731,7 +731,196 @@ const App = () => {
         <Line value={"across"} />
         <Line id="king-line " value={"connectFour"} />
         <Line value={"leftAndUp"} />
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
 
+        {/** LINE 21 */}
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <GodProfile godName={"g0d0"} />
+        <div className="space"></div>
+        <div className="space"></div>
+        <Line id="king-line" value={"rightAndUp"} />
+        <Line id="king-line" value={"connectDown"} />
+        <Line id="king-line" value={"leftAndUp"} />
+        <Line id="king-line" value={"vertical"} />
+
+        {/** ZEUS LINE */}
+        <Line id="king-line" value={"rightAndUp"} />
+        <Line id="king-line" value={"across"} />
+        <Line id="king-line" value={"across"} />
+        <Line id="king-line" value={"across"} />
+        <Line id="king-line" value={"connectDown"} />
+        <Line id="king-line" value={"across"} />
+        <Line id="king-line" value={"across"} />
+        <Line id="king-line" value={"leftAndUp"} />
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+
+        {/** LINE 22 */}
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <Line value={"cornerLeft"} />
+        <Line value={"across"} />
+        <Line value={"connectDown"} />
+        <Line value={"connectUp"} />
+        <Line value={"cornerRight"} />
+
+        {/**ZEUS LINE */}
+        <Line id="king-line" value={"vertical"} />
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <Line value={"cornerLeft"} />
+        <Line value={"connectUp"} />
+        <Line value={"cornerRight"} />
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+
+        {/**LINE 23 */}
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <GodProfile godName={"poo"} />
+        <div className="space"></div>
+        <GodProfile godName={"poo"} />
+        <div className="space"></div>
+        <GodProfile godName={"poo"} />
+
+        {/**ZEUS LINE */}
+        <Line id="king-line" value={"vertical"} />
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <GodProfile godName={"poo"} />
+        <div className="space"></div>
+        <GodProfile godName={"poo"} />
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+
+        {/** LINE 24 */}
+
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+
+        {/**ZEUS LINE */}
+
+        <Line id="king-line" value={"vertical"} />
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+
+        {/**LIE 25 */}
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <GodProfile godName={"poooo"} />
+        <Line id="king-line" value={"across"} />
+        <Line id="king-line" value={"connectDown"} />
+        <Line id="king-line" value={"leftAndUp"} />
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+
+        {/** LINE 26 */}
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <GodProfile godName={"finished"} />
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
+        <div className="space"></div>
         {/** SECTION END ****** */}
       </section>
     </div>

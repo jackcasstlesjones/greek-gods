@@ -20,12 +20,7 @@ export default function Line({ value }) {
           <div className="up-half"></div>
         </>
       )}
-      {/* {value === "leftAndUp" && (
-        <>
-          <div className="left-half"></div>
-          <div className="up-half"></div>
-        </>
-      )} */}
+
       {value === "connectDown" && (
         <>
           <div className="across"></div>
