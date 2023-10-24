@@ -659,20 +659,20 @@ const App = () => {
         <div className="space"></div>
         <Line id="king-line" value={"vertical"} />
         <Line value={"rightAndUp"} />
-        <GodProfile godName={"Poseidon"} />
+        <GodProfile godName={"POSEIDON"} />
         <div className="space"></div>
-        <GodProfile godName={"Hestia"} />
+        <GodProfile godName={"HESTIA"} />
         <div className="space"></div>
-        <GodProfile godName={"Hera"} />
+        <GodProfile godName={"HERA"} />
         <Line id="king-line" value={"rightAndUp"} />
-        <GodProfile godName={"Hermes"} />
+        <GodProfile godName={"HERMES"} />
 
         {/** ZEUS LINE */}
         <Line value={"vertical"} />
         <Line id="king-line" value={"vertical"} />
         <div className="space"></div>
         <Line value={"cornerLeft"} />
-        <GodProfile godName={"Demeter"} />
+        <GodProfile godName={"DEMETER"} />
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
@@ -727,10 +727,17 @@ const App = () => {
         <Line id="king-line" value={"across"} />
         <Line id="king-line" value={"connectFour"} />
         <Line id="king-line" value={"across"} />
-        <GodProfile godName={"Z"} />
-        <GodProfile godName={"EU"} />
-        <GodProfile godName={"S"} />
-        <Line value={"across"} />
+        <GodProfile
+          id="zeus"
+          godName={"Zeus"}
+          cssClass="zeus"
+          class2={"large-text"}
+        />
+        <Line id="king-line" value={"across"} />
+
+        {/* <Line id="king-line" value={"connectFour"} /> */}
+
+        {/* <Line value={"across"} /> */}
         <GodProfile godName={"Persephone"} />
         <Line value={"across"} />
         <Line value={"across"} />
@@ -751,7 +758,7 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
-        <GodProfile godName={"Athena"} />
+        <GodProfile godName={"ATHENA"} />
         <div className="space"></div>
         <div className="space"></div>
         <Line id="king-line" value={"rightAndUp"} />
@@ -814,9 +821,9 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
-        <GodProfile godName={"Hephaestus"} />
+        <GodProfile godName={"HEPHAESTUS"} />
         <div className="space"></div>
-        <GodProfile godName={"Ares"} />
+        <GodProfile godName={"ARES"} />
         <div className="space"></div>
         <GodProfile godName={"Hebe"} />
 
@@ -825,9 +832,9 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
-        <GodProfile godName={"Apollo"} />
+        <GodProfile godName={"APOLLO"} />
         <div className="space"></div>
-        <GodProfile godName={"Artemis"} />
+        <GodProfile godName={"ARTEMIS"} />
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
@@ -911,7 +918,7 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
-        <GodProfile godName={"Dionysus"} />
+        <GodProfile godName={"DIONYSUS"} />
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>

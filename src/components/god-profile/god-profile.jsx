@@ -15,6 +15,8 @@ export default function GodProfile({
   godName,
   godTitle,
   godInfo,
+  cssClass,
+  class2,
   handleComponentChange,
   componentOpen,
 }) {
@@ -51,8 +53,8 @@ export default function GodProfile({
 
   return (
     <>
-      <div className={`god-container`}>
-        <h2 className="closed-godname" onClick={handleOpen}>
+      <div className={`god-container ${cssClass} `}>
+        <h2 className={`${class2} closed-godname`} onClick={handleOpen}>
           {godName}
         </h2>
         <div className="modal"></div>

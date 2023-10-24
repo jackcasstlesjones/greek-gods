@@ -38,10 +38,6 @@ h2 {
   transform: scale(1.2);
 }
 
-.span-five {
-  grid-column: 3 / span 1;
-}
-
 .closed {
   height: 0px;
   width: 50px;
@@ -147,4 +143,15 @@ h2 {
 .close-button:hover {
   cursor: pointer;
   background-color: rgb(188, 188, 188);
+}
+
+.zeus {
+  grid-column: span 3;
+
+  height: 100%;
+  border: solid 4px white;
+}
+
+.large-text {
+  font-size: 150px;
 }
