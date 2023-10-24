@@ -458,7 +458,7 @@ const App = () => {
         <GodProfile
           handleComponentChange={handleComponentChange}
           componentOpen={componentOpen}
-          godName={"Eury"}
+          godName={"Eurybia"}
         />
         {/**ROW 12 */}
         <div className="space"></div>
@@ -483,25 +483,24 @@ const App = () => {
         <Line value={"cornerRight"} />
         <div className="space"></div>
         <Line value={"cornerLeft"} />
-        <Line value={"connectFour"} />
+        <Line value={"connectUp"} />
         <Line value={"cornerRight"} />
         <div className="space"></div>
         <Line value={"cornerLeft"} />
         <Line value={"connectFour"} />
         <Line value={"cornerRight"} />
+
         {/** ROW 13 */}
         <div className="space"></div>
         <div className="space"></div>
         <GodProfile godName={"Metis"} />
-        <Line value={"vertical"} />
-        <GodProfile godName={"god"} />
+        <GodProfile godName={"Amphitrite"} />
+
+        <GodProfile godName={"The Okeanids"} />
         <div className="space"></div>
         <Line value={"vertical"} />
-        <GodProfile
-          handleComponentChange={handleComponentChange}
-          componentOpen={componentOpen}
-          godName={"Prometheus"}
-        />
+        <Line value={"vertical"} />
+
         <Line value={"vertical"} />
         <div className="space"></div>
         <div className="space"></div>
@@ -511,30 +510,36 @@ const App = () => {
         <div className="space"></div>
         <Line value={"vertical"} />
         <div className="space"></div>
-        <GodProfile godName={"god1"} />
-        <Line value={"vertical"} />
-        <GodProfile godName={"god2"} />
+        <GodProfile godName={"Eos"} />
+        <GodProfile godName={"Helios"} x />
+
+        <GodProfile godName={"Selene"} />
         <div className="space"></div>
         <Line value={"vertical"} />
-        <GodProfile godName={"god3"} />
+        <div className="space"></div>
         <Line value={"vertical"} />
         <div className="space"></div>
         <Line value={"vertical"} />
-        <GodProfile godName={"god4"} />
+        <Line value={"vertical"} />
+
         <Line value={"vertical"} />
 
         {/** ROW 14 */}
         <div className="space"></div>
         <div className="space"></div>
         <Line id="king-line" value={"vertical"} />
-        <GodProfile godName={"Amphitrite"} />
+        <Line value={"vertical"} />
         <div className="space"></div>
         <div className="space"></div>
-        <GodProfile godName={"godd"} />
-        <div className="space"></div>
+        <GodProfile godName={"Epimethius"} />
+        <GodProfile
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
+          godName={"Prometheus"}
+        />
         <GodProfile godName={"Atlas"} />
         <Line value={"connectDown"} />
-        <GodProfile godName={"atlaswifey"} />
+        <GodProfile godName={"Pleione"} />
 
         {/** ZEUS LINE */}
         <Line value={"vertical"} />
@@ -543,16 +548,18 @@ const App = () => {
         <Line value={"connectUp"} />
         <Line value={"cornerRight"} />
         <div className="space"></div>
-        <GodProfile godName={"Helios"} />
+        <div className="space"></div>
+
         <div className="space"></div>
         <Line id="king-line" value={"cornerLeft"} />
         <GodProfile godName={"Leto"} />
         <div className="space"></div>
-        <GodProfile godName={"goddd"} />
+        <GodProfile godName={"Asteria"} />
         <Line value={"connectDown"} />
-        <GodProfile godName={"g0ddd"} />
-        <div className="space"></div>
-        <GodProfile godName={"good"} />
+        <GodProfile godName={"Perses"} />
+        <GodProfile godName={"Pallas"} />
+
+        <GodProfile godName={"Astraios"} />
 
         {/** ROW 15 */}
         <div className="space"></div>
@@ -594,9 +601,9 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
-        <GodProfile godName={"Triton"} />
+        <GodProfile godName={"Maia"} />
         <Line id="king-line" value={"cornerRight"} />
-        <GodProfile godName={"Triton"} />
+        <GodProfile godName={"The Pleiades"} />
 
         {/**ZEUS LINE */}
         <Line value={"vertical"} />
@@ -654,7 +661,7 @@ const App = () => {
         <Line value={"rightAndUp"} />
         <GodProfile godName={"Poseidon"} />
         <div className="space"></div>
-        <GodProfile godName={"Poseidon"} />
+        <GodProfile godName={"Hestia"} />
         <div className="space"></div>
         <GodProfile godName={"Hera"} />
         <Line id="king-line" value={"rightAndUp"} />
@@ -744,7 +751,7 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
-        <GodProfile godName={"g0d0"} />
+        <GodProfile godName={"Athena"} />
         <div className="space"></div>
         <div className="space"></div>
         <Line id="king-line" value={"rightAndUp"} />
@@ -807,20 +814,20 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
-        <GodProfile godName={"poo"} />
+        <GodProfile godName={"Hephaestus"} />
         <div className="space"></div>
-        <GodProfile godName={"poo"} />
+        <GodProfile godName={"Ares"} />
         <div className="space"></div>
-        <GodProfile godName={"poo"} />
+        <GodProfile godName={"Hebe"} />
 
         {/**ZEUS LINE */}
         <Line id="king-line" value={"vertical"} />
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
-        <GodProfile godName={"poo"} />
+        <GodProfile godName={"Apollo"} />
         <div className="space"></div>
-        <GodProfile godName={"poo"} />
+        <GodProfile godName={"Artemis"} />
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
@@ -873,7 +880,7 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
-        <GodProfile godName={"poooo"} />
+        <GodProfile godName={"Semele"} />
         <Line id="king-line" value={"across"} />
         <Line id="king-line" value={"connectDown"} />
         <Line id="king-line" value={"leftAndUp"} />
@@ -904,7 +911,7 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
-        <GodProfile godName={"finished"} />
+        <GodProfile godName={"Dionysus"} />
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
