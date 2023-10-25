@@ -75,7 +75,7 @@ export default function GodProfile({
 
     const zoomLevel = getZoomLevel();
     console.log(event.clientX);
-    console.log(zoomLevel.x);
+    console.log(zoomLevel.xg);
   };
 
   return (
