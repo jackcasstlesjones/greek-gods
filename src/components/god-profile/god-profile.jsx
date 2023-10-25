@@ -115,7 +115,9 @@ export default function GodProfile({
               <div className="relations-container">
                 <ul className="relations-list">
                   <li>Parents</li>
-                  <li>Chronos</li>
+                  <li>
+                    <a href="#prometheus">Prometheus</a>
+                  </li>
                   <li>Hermea</li>
                 </ul>
                 <ul className="relations-list">

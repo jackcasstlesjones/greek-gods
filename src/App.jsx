@@ -710,7 +710,6 @@ const App = () => {
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           godName={"Prometheus"}
         />
         <GodProfile
