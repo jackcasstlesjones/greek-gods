@@ -1,15 +1,17 @@
 class God {
-  constructor(godName, godTitle, godInfo, godLink) {
+  constructor(godName, godTitle, godInfo, godLink, replaceLink) {
     this.godName = godName;
     this.godTitle = godTitle;
     this.godInfo = godInfo;
     this.godLink = godLink;
+    this.replaceLink = replaceLink;
   }
 }
 const chaos = new God(
   "Chaos",
   "First of the Primordial Gods",
-  "CHAOS was the first of the primordial gods to emerge at the dawn of creation. Khaos was the lower atmosphere which surrounds the earth--both the invisible air and the gloom of fog and mist. The word khaos means 'gap' or 'chasm' being the space between heaven and earth. She was also a goddess of fate like her daughter Nyx and grand-daughters the Moirai (Moirae). As the goddess of the air Khaos was also the mother of birds, just as Gaia (the Earth) was the mother of land animals, and Thalassa (the Sea) was the mother of fish."
+  "CHAOS was the first of the primordial gods to emerge at the dawn of creation. Khaos was the lower atmosphere which surrounds the earth--both the invisible air and the gloom of fog and mist. The word khaos means 'gap' or 'chasm' being the space between heaven and earth. She was also a goddess of fate like her daughter Nyx and grand-daughters the Moirai (Moirae). As the goddess of the air Khaos was also the mother of birds, just as Gaia (the Earth) was the mother of land animals, and Thalassa (the Sea) was the mother of fish.",
+  "https://en.wikipedia.org/wiki/Chaos_(cosmogony)"
 );
 
 const nyx = new God(
@@ -153,8 +155,7 @@ const amphitrite = new God(
 const theOceanids = new God(
   "The Oceanids",
   "Water Nymphs",
-  "THE OKEANIDES (Oceanids) were three thousand goddess-nymphs who presided over the sources of earth's fresh-water--from rain-clouds to subterranean springs and fountains. Their numbers included the Nephelai (Cloud-Nymphs), Aurai (Breeze-Nymphs), Naiades (Spring and Fountain Nymphs), Leimonides (Pasture Nymphs), and Anthousai (Flower Nymphs). The eldest among them were numbered among the Titanides (female Titans)--Styx, Dione, Neda, Metis, Klymene, Eurynome, Doris, Elektra, and Pleione. These were most likely heavenly goddesses of the clouds.",
-  "https://en.wikipedia.org/wiki/Oceanids"
+  "THE OKEANIDES (Oceanids) were three thousand goddess-nymphs who presided over the sources of earth's fresh-water--from rain-clouds to subterranean springs and fountains. Their numbers included the Nephelai (Cloud-Nymphs), Aurai (Breeze-Nymphs), Naiades (Spring and Fountain Nymphs), Leimonides (Pasture Nymphs), and Anthousai (Flower Nymphs). The eldest among them were numbered among the Titanides (female Titans)--Styx, Dione, Neda, Metis, Klymene, Eurynome, Doris, Elektra, and Pleione. These were most likely heavenly goddesses of the clouds."
 );
 
 const eos = new God(
@@ -184,8 +185,7 @@ const epimethius = new God(
 const prometheus = new God(
   "Prometheus",
   "God of Forethought",
-  "PROMETHEUS was the Titan god of forethought and crafty counsel who was given the task of moulding mankind out of clay. His attempts to better the lives of his creation brought him into conflict with Zeus. Firstly he tricked the gods out of the best portion of the sacrificial feast, acquiring the meat for the feasting of man. Then, when Zeus withheld fire, he stole it from heaven and delivered it to mortal kind hidden inside a fennel-stalk. As punishment for these rebellious acts, Zeus ordered the creation of Pandora (the first woman) as a means to deliver misfortune into the house of man, or as a way to cheat mankind of the company of the good spirits. Prometheus meanwhile, was arrested and bound to a stake on Mount Kaukasos (Caucasus) where an eagle was set to feed upon his ever-regenerating liver (or, some say, heart). Generations later the great hero Herakles (Heracles) came along and released the old Titan from his torture.",
-  "https://en.wikipedia.org/wiki/Prometheus"
+  "PROMETHEUS was the Titan god of forethought and crafty counsel who was given the task of moulding mankind out of clay. His attempts to better the lives of his creation brought him into conflict with Zeus. Firstly he tricked the gods out of the best portion of the sacrificial feast, acquiring the meat for the feasting of man. Then, when Zeus withheld fire, he stole it from heaven and delivered it to mortal kind hidden inside a fennel-stalk. As punishment for these rebellious acts, Zeus ordered the creation of Pandora (the first woman) as a means to deliver misfortune into the house of man, or as a way to cheat mankind of the company of the good spirits. Prometheus meanwhile, was arrested and bound to a stake on Mount Kaukasos (Caucasus) where an eagle was set to feed upon his ever-regenerating liver (or, some say, heart). Generations later the great hero Herakles (Heracles) came along and released the old Titan from his torture."
 );
 
 const atlas = new God(
@@ -215,7 +215,8 @@ const asteria = new God(
 const perses = new God(
   "Perses",
   "God of Destruction",
-  "PERSES was the Titan god of destruction. He was the father of Hekate, goddess of witchcraft, by the Titanis Asteria ('Starry One'). Perses' name means 'the Destroyer' or 'the Ravager' from the Greek words persô and perthô. Hesiod inexplicably describes him as 'preeminent among all men in wisdom.'"
+  "PERSES was the Titan god of destruction. He was the father of Hekate, goddess of witchcraft, by the Titanis Asteria ('Starry One'). Perses' name means 'the Destroyer' or 'the Ravager' from the Greek words persô and perthô. Hesiod inexplicably describes him as 'preeminent among all men in wisdom.'",
+  "https://en.wikipedia.org/wiki/Perses_(Titan)"
 );
 
 const pallas = new God(
@@ -315,8 +316,7 @@ const athena = new God(
 const zeus = new God(
   "Zeus",
   "King of the Gods",
-  "ZEUS was the King of the Gods and the god of the sky, weather, law and order, destiny and fate, and kingship. He was depicted as a regal, mature man with a sturdy figure and dark beard. His usual attributes were a lightning bolt, a royal sceptre and an eagle.",
-  "https://en.wikipedia.org/wiki/Zeus"
+  "ZEUS was the King of the Gods and the god of the sky, weather, law and order, destiny and fate, and kingship. He was depicted as a regal, mature man with a sturdy figure and dark beard. His usual attributes were a lightning bolt, a royal sceptre and an eagle."
 );
 
 const persephone = new God(

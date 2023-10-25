@@ -848,7 +848,6 @@ const App = () => {
           getZoomLevel={getZoomLevel}
           componentOpen={componentOpen}
           {...theMorai}
-          replaceLink={true}
         />
         <div className="space"></div>
         <GodProfile
@@ -910,7 +909,6 @@ const App = () => {
           getZoomLevel={getZoomLevel}
           componentOpen={componentOpen}
           {...thePleiades}
-          replaceLink={true}
         />
 
         {/**ZEUS LINE */}

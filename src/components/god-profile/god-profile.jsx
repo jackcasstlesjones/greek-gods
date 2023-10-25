@@ -25,7 +25,6 @@ export default function GodProfile({
   handleZoomIn,
   handleZoomOut,
   getZoomLevel,
-  replaceLink,
 }) {
   const [show, setShow] = useState(false);
 
@@ -137,9 +136,7 @@ export default function GodProfile({
             <a
               className={show ? `learn-more-link open-text` : `closed-text`}
               href={
-                replaceLink
-                  ? godLink
-                  : `https://en.wikipedia.org/wiki/${godName}`
+                godLink ? godLink : `https://en.wikipedia.org/wiki/${godName}`
               }
             >
               <div className="learn-more-container">
