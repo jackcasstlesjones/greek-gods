@@ -1,8 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { render } from "react-dom";
-// import panzoom from "panzoom";
-import Panzoom from "@panzoom/panzoom";
-
+import panzoom from "panzoom";
 import "./App.css";
 import GodProfile from "./components/god-profile/god-profile";
 import {
@@ -24,28 +22,61 @@ import Line from "./components/line/line";
 
 const App = () => {
   const canvasRef = useRef(null);
+  const panzoomRef = useRef(null); // Create a ref to hold the panzoom instance
 
   useEffect(() => {
-    const elem = canvasRef.current;
-    const panzoom = Panzoom(elem, {
-      minScale: -10,
-      // Other options can be set here
+    const canvas = panzoom(canvasRef.current, {
+      // autocenter: true,
+      // bounds: true,
+      // boundsPadding: 0.1,
+      initialX: 7000,
+      initialY: 0,
+      // transformOrigin: { x: 0.5, y: 0.5 },
+
+      // initialZoom: 0.3,
+      // maxZoom: 2,
+      // minZoom: 0.5,
     });
 
-    // Example usage: panning and zooming
-    // panzoom.pan(10, 10);
-    // panzoom.zoom(2, { animate: true });
+    panzoomRef.current = canvas;
 
-    // Panning and pinch zooming are bound automatically (unless disablePan is true).
-    // There are several available methods for zooming
-    // that can be bound on button clicks or mousewheel.
-
-    // For example:
-    // button.addEventListener('click', panzoom.zoomIn);
-    // elem.parentElement.addEventListener('wheel', panzoom.zoomWithWheel);
-
-    // Remember to clean up the panzoom instance when the component is unmounted
+    return () => {
+      canvas.dispose();
+    };
   }, []);
+
+  const handleZoomIn = (xValue, yValue, zoomValue) => {
+    if (panzoomRef.current) {
+      panzoomRef.current.smoothZoom(xValue, yValue, zoomValue); // Zooming in
+    }
+  };
+
+  const handleZoomOut = (xValue, yValue, zoomValue) => {
+    if (panzoomRef.current) {
+      panzoomRef.current.smoothZoom(0, 0, 0.5); // Zooming out smoothly
+    }
+  };
+
+  const handlePan = (xValue, yValue) => {
+    if (panzoomRef.current) {
+      panzoomRef.current.smoothMoveTo(xValue, yValue);
+    }
+  };
+
+  const getZoomLevel = () => {
+    if (panzoomRef.current) {
+      return panzoomRef.current.getTransform();
+    }
+  };
+
+  const element = document.querySelector("tree");
+  console.log(element);
+
+  const [componentOpen, setComponentOpen] = useState(false);
+
+  const handleComponentChange = () => {
+    setComponentOpen((prevState) => !prevState);
+  };
 
   return (
     <div
@@ -55,7 +86,10 @@ const App = () => {
         overflow: "hidden",
       }}
     >
-      <section ref={canvasRef}>
+      <button onClick={handleZoomIn}>Zoom In</button>
+      <button onClick={handleZoomOut}>Zoom Out</button>
+      <button onClick={getZoomLevel}>Get Zoom</button>
+      <section className="tree" ref={canvasRef}>
         {/** ROW 1 */}
         <div className="space"></div>
         <div className="space"></div>
@@ -70,12 +104,12 @@ const App = () => {
         <div className="space"></div>
         {/* ↓↓↓ ZEUS LINE, AFTER THIS THERE SHOULD BE 16 ELEMENTS */}
         <GodProfile
-          // handleZoomIn={handleZoomIn}
-          // handleZoomOut={handleZoomOut}
-          // getZoomLevel={getZoomLevel}
-          // handlePan={handlePan}
-          // handleComponentChange={handleComponentChange}
-          // componentOpen={componentOpen}
+          handleZoomIn={handleZoomIn}
+          handleZoomOut={handleZoomOut}
+          getZoomLevel={getZoomLevel}
+          handlePan={handlePan}
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
           godName="Chaos"
         />
         <div className="space"></div>
@@ -132,12 +166,20 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
-        <GodProfile godName={"Nyx"} />
+        <GodProfile
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
+          godName={"Nyx"}
+        />
         <Line value="across" />
         {/** ↓↓↓ ZEUS LINE */}
         <Line value="connectDown" />
         <Line value="across" />
-        <GodProfile godName={"Erebus"} />
+        <GodProfile
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
+          godName={"Erebus"}
+        />
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
@@ -190,12 +232,20 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
-        <GodProfile godName={"Aither"} />
+        <GodProfile
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
+          godName={"Aither"}
+        />
         <Line value="across" />
         {/** ↓↓↓ ZEUS LINE */}
         <Line value="connectDown" />
         <Line value="across" />
-        <GodProfile godName={"Hemera"} />
+        <GodProfile
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
+          godName={"Hemera"}
+        />
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
@@ -248,12 +298,20 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
-        <GodProfile godName={"Gaia"} />
+        <GodProfile
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
+          godName={"Gaia"}
+        />
         <Line value="across" />
         {/** ↓↓↓ ZEUS LINE */}
         <Line value="connectDown" />
         <Line value="across" />
-        <GodProfile godName={"Ouranos"} />
+        <GodProfile
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
+          godName={"Ouranos"}
+        />
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
@@ -311,7 +369,11 @@ const App = () => {
         {/** ↓↓↓ ZEUS LINE */}
         <Line value={"vertical"} />
         <div className="space"></div>
-        <GodProfile godName={"Aphrodite"} />
+        <GodProfile
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
+          godName={"Aphrodite"}
+        />
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
@@ -355,34 +417,90 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         {/**ROW 11 */}
-        <GodProfile godName={"Mnemosyne"} />
+        <GodProfile
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
+          godName={"Mnemosyne"}
+        />
         <div className="space"></div>
-        <GodProfile godName={"Okeanos"} />
+        <GodProfile
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
+          godName={"Okeanos"}
+        />
         <Line value={"connectDown"} />
-        <GodProfile godName={"Tethys"} />
+        <GodProfile
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
+          godName={"Tethys"}
+        />
         <div className="space"></div>
-        <GodProfile godName={"Lapetos"} />
+        <GodProfile
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
+          godName={"Lapetos"}
+        />
         <div className="space"></div>
-        <GodProfile godName={"Klymene"} />
+        <GodProfile
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
+          godName={"Klymene"}
+        />
         <div className="space"></div>
-        <GodProfile godName={"Kronos"} />
+        <GodProfile
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
+          godName={"Kronos"}
+        />
         {/**ZEUS LINE */}
         <Line value={"connectFour"} />
-        <GodProfile godName={"Rhea"} />
+        <GodProfile
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
+          godName={"Rhea"}
+        />
         <div className="space"></div>
-        <GodProfile godName={"Themis"} />
+        <GodProfile
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
+          godName={"Themis"}
+        />
         <div className="space"></div>
-        <GodProfile godName={"Hyperion"} />
+        <GodProfile
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
+          godName={"Hyperion"}
+        />
         <Line value={"connectDown"} />
-        <GodProfile godName={"Theia"} />
+        <GodProfile
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
+          godName={"Theia"}
+        />
         <div className="space"></div>
-        <GodProfile godName={"Koios"} />
+        <GodProfile
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
+          godName={"Koios"}
+        />
         <Line value={"connectDown"} />
-        <GodProfile godName={"Phoebe"} />
+        <GodProfile
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
+          godName={"Phoebe"}
+        />
         <div className="space"></div>
-        <GodProfile godName={"Krios"} />
+        <GodProfile
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
+          godName={"Krios"}
+        />
         <Line value={"connectDown"} />
-        <GodProfile godName={"Eurybia"} />
+        <GodProfile
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
+          godName={"Eurybia"}
+        />
         {/**ROW 12 */}
         <div className="space"></div>
         <div className="space"></div>
@@ -412,15 +530,18 @@ const App = () => {
         <Line value={"cornerLeft"} />
         <Line value={"connectFour"} />
         <Line value={"cornerRight"} />
+
         {/** ROW 13 */}
         <div className="space"></div>
         <div className="space"></div>
         <GodProfile godName={"Metis"} />
         <GodProfile godName={"Amphitrite"} />
+
         <GodProfile godName={"The Okeanids"} />
         <div className="space"></div>
         <Line value={"vertical"} />
         <Line value={"vertical"} />
+
         <Line value={"vertical"} />
         <div className="space"></div>
         <div className="space"></div>
@@ -432,6 +553,7 @@ const App = () => {
         <div className="space"></div>
         <GodProfile godName={"Eos"} />
         <GodProfile godName={"Helios"} x />
+
         <GodProfile godName={"Selene"} />
         <div className="space"></div>
         <Line value={"vertical"} />
@@ -440,7 +562,9 @@ const App = () => {
         <div className="space"></div>
         <Line value={"vertical"} />
         <Line value={"vertical"} />
+
         <Line value={"vertical"} />
+
         {/** ROW 14 */}
         <div className="space"></div>
         <div className="space"></div>
@@ -449,10 +573,15 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <GodProfile godName={"Epimethius"} />
-        <GodProfile godName={"Prometheus"} />
+        <GodProfile
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
+          godName={"Prometheus"}
+        />
         <GodProfile godName={"Atlas"} />
         <Line value={"connectDown"} />
         <GodProfile godName={"Pleione"} />
+
         {/** ZEUS LINE */}
         <Line value={"vertical"} />
         <Line id="king-line" value={"cornerLeft"} />
@@ -461,6 +590,7 @@ const App = () => {
         <Line value={"cornerRight"} />
         <div className="space"></div>
         <div className="space"></div>
+
         <div className="space"></div>
         <Line id="king-line" value={"cornerLeft"} />
         <GodProfile godName={"Leto"} />
@@ -469,7 +599,9 @@ const App = () => {
         <Line value={"connectDown"} />
         <GodProfile godName={"Perses"} />
         <GodProfile godName={"Pallas"} />
+
         <GodProfile godName={"Astraios"} />
+
         {/** ROW 15 */}
         <div className="space"></div>
         <div className="space"></div>
@@ -482,6 +614,7 @@ const App = () => {
         <Line value={"cornerLeft"} />
         <Line value={"connectUp"} />
         <Line value={"cornerRight"} />
+
         {/** ZEUS LINE */}
         <Line value={"vertical"} />
         <Line id="king-line" value={"vertical"} />
@@ -499,6 +632,7 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
+
         {/** ROW 16 */}
         <div className="space"></div>
         <div className="space"></div>
@@ -511,6 +645,7 @@ const App = () => {
         <GodProfile godName={"Maia"} />
         <Line id="king-line" value={"cornerRight"} />
         <GodProfile godName={"The Pleiades"} />
+
         {/**ZEUS LINE */}
         <Line value={"vertical"} />
         <Line id="king-line" value={"vertical"} />
@@ -528,6 +663,7 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
+
         {/**ROW 17 */}
         <div className="space"></div>
         <div className="space"></div>
@@ -540,6 +676,7 @@ const App = () => {
         <Line value={"connectDown"} />
         <Line value={"connectFour"} />
         <Line value={"across"} />
+
         {/**ZEUS LINE */}
         <Line value={"connectFour"} />
         <Line value={"connectFour"} />
@@ -557,6 +694,7 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
+
         {/**  ROW 18 */}
         <div className="space"></div>
         <div className="space"></div>
@@ -569,6 +707,7 @@ const App = () => {
         <GodProfile godName={"HERA"} />
         <Line id="king-line" value={"rightAndUp"} />
         <GodProfile godName={"HERMES"} />
+
         {/** ZEUS LINE */}
         <Line value={"vertical"} />
         <Line id="king-line" value={"vertical"} />
@@ -576,12 +715,12 @@ const App = () => {
         <Line value={"cornerLeft"} />
         <GodProfile
           godName={"DEMETER"}
-          // handleZoomIn={handleZoomIn}
-          // handleZoomOut={handleZoomOut}
-          // getZoomLevel={getZoomLevel}
-          // handlePan={handlePan}
-          // handleComponentChange={handleComponentChange}
-          // componentOpen={componentOpen}
+          handleZoomIn={handleZoomIn}
+          handleZoomOut={handleZoomOut}
+          getZoomLevel={getZoomLevel}
+          handlePan={handlePan}
+          handleComponentChange={handleComponentChange}
+          componentOpen={componentOpen}
         />
         <div className="space"></div>
         <div className="space"></div>
@@ -594,6 +733,7 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
+
         {/** line 19 */}
         <div className="space"></div>
         <div className="space"></div>
@@ -606,6 +746,7 @@ const App = () => {
         <Line id="king-line" value={"vertical"} />
         <div className="space"></div>
         <Line id="king-line" value={"vertical"} />
+
         {/** ZEUS LINE */}
         <Line value={"vertical"} />
         <Line id="king-line" value={"vertical"} />
@@ -623,6 +764,7 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
+
         {/** LINE 20 */}
         <div className="space"></div>
         <div className="space"></div>
@@ -641,7 +783,9 @@ const App = () => {
           class2={"large-text"}
         />
         <Line id="king-line" value={"across"} />
+
         {/* <Line id="king-line" value={"connectFour"} /> */}
+
         {/* <Line value={"across"} /> */}
         <GodProfile godName={"Persephone"} />
         <Line value={"across"} />
@@ -656,6 +800,7 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
+
         {/** LINE 21 */}
         <div className="space"></div>
         <div className="space"></div>
@@ -669,6 +814,7 @@ const App = () => {
         <Line id="king-line" value={"connectDown"} />
         <Line id="king-line" value={"leftAndUp"} />
         <Line id="king-line" value={"vertical"} />
+
         {/** ZEUS LINE */}
         <Line id="king-line" value={"rightAndUp"} />
         <Line id="king-line" value={"across"} />
@@ -685,6 +831,7 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
+
         {/** LINE 22 */}
         <div className="space"></div>
         <div className="space"></div>
@@ -697,6 +844,7 @@ const App = () => {
         <Line value={"connectDown"} />
         <Line value={"connectUp"} />
         <Line value={"cornerRight"} />
+
         {/**ZEUS LINE */}
         <Line id="king-line" value={"vertical"} />
         <div className="space"></div>
@@ -714,6 +862,7 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
+
         {/**LINE 23 */}
         <div className="space"></div>
         <div className="space"></div>
@@ -726,6 +875,7 @@ const App = () => {
         <GodProfile godName={"ARES"} />
         <div className="space"></div>
         <GodProfile godName={"Hebe"} />
+
         {/**ZEUS LINE */}
         <Line id="king-line" value={"vertical"} />
         <div className="space"></div>
@@ -743,7 +893,9 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
+
         {/** LINE 24 */}
+
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
@@ -755,7 +907,9 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
+
         {/**ZEUS LINE */}
+
         <Line id="king-line" value={"vertical"} />
         <div className="space"></div>
         <div className="space"></div>
@@ -772,6 +926,7 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
+
         {/**LIE 25 */}
         <div className="space"></div>
         <div className="space"></div>
@@ -800,6 +955,7 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <div className="space"></div>
+
         {/** LINE 26 */}
         <div className="space"></div>
         <div className="space"></div>
