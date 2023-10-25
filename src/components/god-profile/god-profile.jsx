@@ -50,9 +50,9 @@ export default function GodProfile({
     if (!componentOpen) return;
     handleComponentChange();
     switchBoolean(show);
-    const zoomLevel = getZoomLevel();
 
-    // handleZoomOut(rect.x, rect.y, zoomLevel.scale - 5);
+    const rect = elementRef.current.getBoundingClientRect();
+    handleZoomOut(rect.x, rect.y, 0.375);
   };
   const handleOpen = (event) => {
     if (componentOpen) return;
@@ -60,22 +60,33 @@ export default function GodProfile({
     const rect = elementRef.current.getBoundingClientRect();
     handleComponentChange();
     switchBoolean(show);
-
     const { scale } = getZoomLevel();
-    if (scale < 0.3) {
+    console.log(scale);
+
+    if (scale <= 0.2) {
       console.log(scale);
-      handleZoomIn(rect.x, rect.y, 6);
-    }
-    //  else if (scale < 0.3) {
-    //   console.log(scale);
-    // handleZoomIn(rect.x,rect.y, 5);
-    // }
-    else if (scale < 0.5) {
+      handleZoomIn(rect.x, rect.y, 5);
+    } else if (scale <= 0.3) {
+      console.log(scale);
+      handleZoomIn(rect.x, rect.y, 4);
+    } else if (scale <= 0.4) {
       console.log(scale);
       handleZoomIn(rect.x, rect.y, 3);
-    } else if (scale < 0.8) {
+    } else if (scale <= 0.5) {
       console.log(scale);
-      handleZoomIn(rect.x, rect.y, 2);
+      handleZoomIn(rect.x, rect.y, 2.5);
+    } else if (scale <= 0.6) {
+      console.log(scale);
+      handleZoomIn(rect.x, rect.y, 1.8);
+    } else if (scale <= 0.7) {
+      console.log(scale);
+      handleZoomIn(rect.x, rect.y, 1.5);
+    } else if (scale <= 0.8) {
+      console.log(scale);
+      handleZoomIn(rect.x, rect.y, 1.3);
+    } else if (scale <= 0.9) {
+      console.log(scale);
+      handleZoomIn(rect.x, rect.y, 1);
     }
   };
 

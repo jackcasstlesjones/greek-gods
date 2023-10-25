@@ -47,7 +47,8 @@ const App = () => {
 
   const handleZoomOut = (xValue, yValue, zoomValue) => {
     if (panzoomRef.current) {
-      panzoomRef.current.smoothZoom(0, 0, 0.5); // Zooming out smoothly
+      console.log("zooming out");
+      panzoomRef.current.smoothZoom(xValue, yValue, zoomValue); // Zooming out smoothly
     }
   };
 
