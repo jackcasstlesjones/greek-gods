@@ -52,7 +52,7 @@ export default function GodProfile({
     switchBoolean(show);
 
     const rect = elementRef.current.getBoundingClientRect();
-    handleZoomOut(rect.x, rect.y, 0.375);
+    handleZoomOut(rect.x, rect.y, 0.4);
   };
   const handleOpen = (event) => {
     if (componentOpen) return;
