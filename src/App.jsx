@@ -3,6 +3,8 @@ import { render } from "react-dom";
 import panzoom from "panzoom";
 import "./App.css";
 import GodProfile from "./components/god-profile/god-profile";
+import AudioPlayer from "./components/audio-player/audio-player";
+import mySong from "./assets/background-music.m4a";
 import {
   zeus,
   dionysus,
@@ -84,6 +86,7 @@ const App = () => {
       {/* <button onClick={handleZoomIn}>Zoom In</button>
       <button onClick={handleZoomOut}>Zoom Out</button>
       <button onClick={getZoomLevel}>Get Zoom</button> */}
+      <AudioPlayer source={mySong} />
       <section className="tree" ref={canvasRef}>
         {/** ROW 1 */}
         <div className="space"></div>

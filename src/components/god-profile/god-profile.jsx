@@ -1,5 +1,6 @@
 import { useSyncExternalStore, useEffect, useRef } from "react";
 import "./god-profile.css";
+
 import { useState } from "react";
 import zeusImg from "../../assets/imgs/zeus.webp";
 import dionysusImg from "../../assets/imgs/dionysus.webp";
