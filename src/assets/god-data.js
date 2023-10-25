@@ -153,12 +153,118 @@ const amphitrite = new God(
   "AMPHITRITE was the goddess-queen of the sea, wife of Poseidon, and eldest of the fifty Nereides. She was the female personification of the sea--the loud-moaning mother of fish, seals and dolphins. When Poseidon first sought Amphitrite's hand in marriage, she fled his advances, and hid herself away near Atlas in the Ocean stream at the far ends of the earth. The dolphin-god Delphin eventually tracked her down and persuaded her to return to wed the sea-king."
 );
 
-const zeus = new God(
-  "Zeus",
-  "King of the Gods",
-  "ZEUS was the King of the Gods and the god of the sky, weather, law and order, destiny and fate, and kingship. He was depicted as a regal, mature man with a sturdy figure and dark beard. His usual attributes were a lightning bolt, a royal sceptre and an eagle.",
-  "Olympus",
-  "span-three"
+const theOceanids = new God(
+  "The Oceanids",
+  "The Water Nymphs",
+  "THE OKEANIDES (Oceanids) were three thousand goddess-nymphs who presided over the sources of earth's fresh-water--from rain-clouds to subterranean springs and fountains. Their numbers included the Nephelai (Cloud-Nymphs), Aurai (Breeze-Nymphs), Naiades (Spring and Fountain Nymphs), Leimonides (Pasture Nymphs), and Anthousai (Flower Nymphs). The eldest among them were numbered among the Titanides (female Titans)--Styx, Dione, Neda, Metis, Klymene, Eurynome, Doris, Elektra, and Pleione. These were most likely heavenly goddesses of the clouds."
+);
+
+const eos = new God(
+  "Eos",
+  "Goddess of the Dawn",
+  "EOS was the rosy-fingered goddess of the dawn. She and her siblings Helios (the Sun) and Selene (the Moon) were numbered amongst the second-generation Titan gods. Eos rose into the sky from the river Okeanos (Oceanus) at the start of each day, and with her rays of light dispersed the mists of night. She was depicted either driving a chariot drawn by winged horses or borne aloft on her own wings."
+);
+
+const helios = new God(
+  "Helios",
+  "God of the Sun",
+  "HELIOS (Helius) was the Titan god of the sun, a guardian of oaths, and the god of sight. He dwelt in a golden palace in the River Okeanos (Oceanus) at the far ends of the earth from which he emerged each dawn, crowned with the aureole of the sun, driving a chariot drawn by four winged steeds. When he reached the the land of the Hesperides in the far West he descended into a golden cup which bore him through the northern streams of Okeanos back to his rising place in the East."
+);
+
+const selene = new God(
+  "Selene",
+  "Goddess of the Moon",
+  "SELENE was the Titan goddess of the moon. She was depicted as a woman riding sidesaddle on a horse or driving a chariot drawn by a pair of winged steeds. Her lunar sphere or crescent was either a crown set upon her head or the fold of a raised, shining cloak. She was sometimes said to drive a team of oxen and her lunar crescent was likened to a pair of bull's horns."
+);
+
+const epimethius = new God(
+  "Epimethius",
+  "God of Afterthought",
+  "EPIMETHEUS was the Titan god of afterthought and excuses. He and his brother Prometheus were given the task of populating the earth with animals and men. However, Epimetheus quickly exhausted the supply of gifts allotted for the task in the equipment of animals, leaving Prometheus' masterpiece, mankind, completely helpless. As a result the Titan brother was forced to steal fire from heaven to arm them. Zeus was angered by this theft and ordered the creation of Pandora, the first woman, as a means to deliver evil into the house of man. Despite the warnings of his brother, Epimetheus happily received her as his bride, but as soon as she arrived she lifted the lid of a jar entrusted her by the gods, releasing a plague of harmful daimones (spirits) to trouble mankind. Only Hope (Elpis) remained behind to succor the unfortunate race."
+);
+
+const prometheus = new God(
+  "Prometheus",
+  "God of Forethought",
+  "PROMETHEUS was the Titan god of forethought and crafty counsel who was given the task of moulding mankind out of clay. His attempts to better the lives of his creation brought him into conflict with Zeus. Firstly he tricked the gods out of the best portion of the sacrificial feast, acquiring the meat for the feasting of man. Then, when Zeus withheld fire, he stole it from heaven and delivered it to mortal kind hidden inside a fennel-stalk. As punishment for these rebellious acts, Zeus ordered the creation of Pandora (the first woman) as a means to deliver misfortune into the house of man, or as a way to cheat mankind of the company of the good spirits. Prometheus meanwhile, was arrested and bound to a stake on Mount Kaukasos (Caucasus) where an eagle was set to feed upon his ever-regenerating liver (or, some say, heart). Generations later the great hero Herakles (Heracles) came along and released the old Titan from his torture."
+);
+
+const atlas = new God(
+  "Atlas",
+  "God who Carried the Sky",
+  "ATLAS was the Titan god who bore the sky aloft. He personified the quality of endurance (atlaô). Atlas was a leader of the Titanes (Titans) in their war against Zeus and after their defeat he was condemned to carry the heavens upon his shoulders. According to others he was instead (or later) appointed guardian of the pillars which held the earth and sky asunder. Atlas was also the god who instructed mankind in the art of astronomy, a tool which was used by sailors in navigation and farmers in measuring the seasons. These roles were often combined and Atlas becomes the god who turns the heaven on their axis, causing the stars to revolve."
+);
+
+const pleione = new God(
+  "Pleione",
+  "Oceanid Nymph",
+  "PLEIONE was an Okeanid-nymph of Mount Kyllene (Cyllene) in Arkadia, southern Greece. She was the wife of the Titan Atlas and bore him a bevy of beautiful daughters. Pleione may have been numbered amongst the Epimelides (Sheep-Nymphs) and presided over the multiplication of the flocks--for her name means 'to increase in number' and her grandson Hermes was the god of animal husbandry."
+);
+
+const leto = new God(
+  "Leto",
+  "Mother of the Twins",
+  "LETO was one of the Titanides (female Titans), a bride of Zeus, and the mother of the twin gods Apollon and Artemis. She was the goddess of motherhood and, with her children, a protectress of the young. Her name and iconography suggest she was also a goddess of modesty and womanly demure. Like her sister Asteria she may also have been a goddess of the night, or alternatively of the light of day."
+);
+
+const asteria = new God(
+  "Asteria",
+  "Goddess of Nighttime Divinations",
+  "ASTERIA was the Titan goddess of falling stars and perhaps of nighttime divinations such as oneiromancy (by dreams) and astrology (by stars). She was the mother of Hekate (Hecate), goddess of witchcraft, by the Titan Perses. After the fall of the Titans, Zeus chased Asteria across the sky but she escaped him by transforming herself into a quail and leaping into the sea to became the island of Delos. Her sister Leto later gave birth to Apollon on the isle."
+);
+
+const perses = new God(
+  "Perses",
+  "God of Destruction",
+  "PERSES was the Titan god of destruction. He was the father of Hekate, goddess of witchcraft, by the Titanis Asteria ('Starry One'). Perses' name means 'the Destroyer' or 'the Ravager' from the Greek words persô and perthô. Hesiod inexplicably describes him as 'preeminent among all men in wisdom.'"
+);
+
+const pallas = new God(
+  "Pallas",
+  "God of Battle",
+  "PALLAS was the Titan god of battle and warcraft. He was the father of Nike (Victory), Zelos (Rivalry), Kratos (Cratus, Strength) and Bia (Power) by Styx (Hatred), children who sided with Zeus during the Titan-War. Pallas' name was derived from the Greek word pallô meaning 'to brandish (a spear)'. He was vanquished by the goddess Athena who crafted her aigis (a goat-hide arm-guard) from his skin."
+);
+
+const astraeus = new God(
+  "Astreus",
+  "God of Astrology",
+  "ASTRAIOS (Astraeus) was the Titan god of stars and planets and of the art of astrology. By Eos (the Dawn) he was the father of the Stars and the four seasonal Winds. The arrival of these Winds was heralded by the rising of certain constellations. Astraios also had a daughter named Astraia (Astraea) who was the goddess of the constellation Virgo. Astraios' name appears with those of several other Titanes (Titans) in the lists of Gigantes (Giants) who made war on the gods which suggests he played some role in both the Titan and Giant Wars."
+);
+
+const theMorai = new God(
+  "The Morai",
+  "Goddesses of Fate",
+  "THE MOIRAI (Moirae) were the three goddesses of fate who personified the inescapable destiny of man. They assigned to every person his or her fate or share in the scheme of things. Their name means 'Parts.' 'Shares' or 'Alottted Portions.' The individuals were Klotho (Clotho), the 'the Spinner,' who spun the thread of life, Lakhesis (Lachesis), 'the Apportioner of Lots', who measured it, and Atropos (or Aisa), 'She who cannot be turned,' who cut it short. Zeus Moiragetes, the god of fate, was their leader."
+);
+
+const theHorai = new God(
+  "The Horai",
+  "Goddesses of the Seasons",
+  "THE HORAI (Horae) were the goddesses of the seasons and the natural portions of time. They presided over the revolutions of the heavenly constellations by which the year was measured, while their three sisters, the Moirae (Moirae) spinned out the web of fate. The Horai also guarded the gates of Olympos and rallied the stars and constellations of heaven."
+);
+
+const hecate = new God(
+  "Hecate",
+  "Goddess of Witchcraft",
+  "HEKATE (Hecate) was the goddess of magic, witchcraft, the night, moon, ghosts and necromancy. She was the only child of the Titanes Perses and Asteria from whom she received her power over heaven, earth, and sea. Hekate assisted Demeter in her search for Persephone, guiding her through the night with flaming torches. After the mother-daughter reunion became she Persephone's minister and companion in Haides."
+);
+
+const triton = new God(
+  "Triton",
+  "Fish-Tailed Sea God",
+  "TRITON was a fish-tailed sea-god, the son and herald of Poseidon who stilled the waves with his conch-shell trumpet. Triton was also described as the god of the Tritonis, a large salt-lake in Libya. When the Argonauts found themselves stranded in the middle of the desert he helped them find passage from the lake back to the sea. Trtion was depicted in Greek vase painting as fish-tailed merman, sometimes bearded, sometimes youthful."
+);
+
+const maia = new God(
+  "Maia",
+  "the Nursing Mother",
+  "MAIA was the eldest of the Pleiades, the seven nymphs of the constellation Pleiades. She was a shy goddess who dwelt alone in a cave near the peaks of Mount Kyllene (Cyllene) in Arkadia where she secretly gave birth to the god Hermes, her son by Zeus. She also raised the boy Arkas (Arcas) in her cave whose mother Kallisto (Callisto) had been transformed into a bear."
+);
+
+const thePleiades = new God(
+  "The Pleiades",
+  "the Mountain Nymphs",
+  "THE PLEIADES were seven mountain-nymph daughters of the Titan Atlas. Their leader was Maia the mother of Hermes by Zeus. Five of the other Pleiades were also loved by gods becoming ancestresses of various royal families including those of Sparta and Troy. When they were pursued by the lustful giant Orion, Zeus placed them amongst the stars as the constellation Pleiades. Their name means 'Daughters of Pleione' and also 'Ladies of Plenty' from the Greek word pleiôn 'plenty'."
 );
 
 const poseidon = new God(
@@ -168,17 +274,22 @@ const poseidon = new God(
   "Olympus"
 );
 
-const dionysus = new God(
-  "Dionysus",
-  "God of Wine",
-  "DIONYSUS was the Olympian god of wine, vegetation, pleasure, festivity, madness and wild frenzy. He was depicted as either an older, bearded god or an effeminate, long-haired youth. His attributes included the thyrsos (a pine-cone tipped staff), a drinking cup and a crown of ivy. He was usually accompanied by a troop of Satyrs and Mainades (wild female devotees.)",
-  "Olympus"
-);
-
 const hestia = new God(
   "Hestia",
   "Goddess of the Hearth",
   "HESTIA was the virgin goddess of the hearth (both private and municipal) and the home. As the goddess of the family hearth she also presided over the cooking of bread and the preparation of the family meal. Hestia was also the goddess of the sacrificial flame and received a share of every sacrifice to the gods. The cooking of the communal feast of sacrificial meat was naturally a part of her domain."
+);
+
+const hera = new God(
+  "Hera",
+  "Queen of the Gods",
+  "HERA was the Olympian queen of the gods, and the goddess of marriage, women, the sky and the stars of heaven. She was usually depicted as a beautiful woman wearing a crown and holding a royal, lotus-tipped sceptre, and sometimes accompanied by a lion, cuckoo or hawk."
+);
+
+const hermes = new God(
+  "Hermes",
+  "Messenger of the Gods",
+  "HERMES was the Olympian god of herds and flocks, travellers and hospitality, roads and trade, thievery and cunning, heralds and diplomacy, language and writing, athletic contests and gymnasiums, astronomy and astrology. He was the herald and personal messenger of Zeus, King of the Gods, and also the guide of the dead who led souls down into the underworld. Hermes was depicted as either a handsome and athletic, beardless youth or as an older, bearded man, with winged boots and a herald's wand."
 );
 
 const demeter = new God(
@@ -189,20 +300,46 @@ const demeter = new God(
 
 const hades = new God(
   "Hades",
-  "God of the Underworld",
+  "Queen of the Underworld",
   "HADES was the king of the underworld and god of the dead. He presided over funeral rites and defended the right of the dead to due burial. Haides was also the god of the hidden wealth of the earth, from the fertile soil with nourished the seed-grain, to the mined wealth of gold, silver and other metals."
-);
-
-const hera = new God(
-  "Hera",
-  "Queen of the Gods",
-  "HERA was the Olympian queen of the gods, and the goddess of marriage, women, the sky and the stars of heaven. She was usually depicted as a beautiful woman wearing a crown and holding a royal, lotus-tipped sceptre, and sometimes accompanied by a lion, cuckoo or hawk."
 );
 
 const athena = new God(
   "Athena",
   "Goddess of Wisdom",
   "ATHENA was the Olympian goddess of wisdom and good counsel, war, the defence of towns, heroic endeavour, weaving, pottery and various other crafts. She was depicted as a stately woman armed with a shield and spear, and wearing a long robe, crested helm, and the famed aigis--a snake-trimmed cape adorned with the monstrous visage of the Gorgon Medousa (Medusa)."
+);
+
+const zeus = new God(
+  "Zeus",
+  "King of the Gods",
+  "ZEUS was the King of the Gods and the god of the sky, weather, law and order, destiny and fate, and kingship. He was depicted as a regal, mature man with a sturdy figure and dark beard. His usual attributes were a lightning bolt, a royal sceptre and an eagle.",
+  "Olympus",
+  "span-three"
+);
+
+const persephone = new God(
+  "Persephone",
+  "Queen of the Underworld",
+  "PERSEPHONE was the goddess queen of the underworld, wife of the god Haides (Hades). She was also the goddess of spring growth, who was worshipped alongside her mother Demeter in the Eleusinian Mysteries. This agricultural-based cult promised its initiates passage to a blessed afterlife."
+);
+
+const hephaestus = new God(
+  "Hephaestus",
+  "God of Blacksmiths",
+  "HEPHAISTOS (Hephaestus) was the Olympian god of fire, smiths, craftsmen, metalworking, stonemasonry and sculpture. He was depicted as a bearded man holding a hammer and tongs--the tools of a smith--and sometimes riding a donkey."
+);
+
+const ares = new God(
+  "Ares",
+  "God of War",
+  "ARES was the Olympian god of war, battlelust, courage and civil order. In ancient Greek art he was depicted as either a mature, bearded warrior armed for battle, or a nude, beardless youth with a helm and spear."
+);
+
+const hebe = new God(
+  "Hebe",
+  "Goddess of Youth",
+  "HEBE was the goddess of youth and the cupbearer of the gods who served ambrosia at the heavenly feast. She was also the patron goddess of the young bride and an attendant of the goddess Aphrodite. Herakles (Heracles) received Hebe in marriage upon his ascension to Olympos, a wedding which reconciled the hero with Hebe's mother Hera."
 );
 
 const apollo = new God(
@@ -217,16 +354,17 @@ const artemis = new God(
   "ARTEMIS was the Olympian goddess of hunting, the wilderness and wild animals. She was also a goddess of childbirth, and the protectress of the girl child up to the age of marriage--her twin brother Apollo was similarly the protector of the boy child. Together the two gods were also bringers of sudden death and disease--Artemis targetted women and girls, Apollo men and boys. In ancient art Artemis was usually depicted as a girl or young maiden with a hunting bow and quiver of arrows."
 );
 
-const hermes = new God(
-  "Hermes",
-  "Messenger of the Gods",
-  "HERMES was the Olympian god of herds and flocks, travellers and hospitality, roads and trade, thievery and cunning, heralds and diplomacy, language and writing, athletic contests and gymnasiums, astronomy and astrology. He was the herald and personal messenger of Zeus, King of the Gods, and also the guide of the dead who led souls down into the underworld. Hermes was depicted as either a handsome and athletic, beardless youth or as an older, bearded man, with winged boots and a herald's wand."
+const semele = new God(
+  "Semele",
+  "Goddess of Female Frenzy",
+  "SEMELE THYONE was the mother of Dionysos and the goddess of the Bacchic frenzy which seized female devotees of the god during the Orgies. Thyone's mortal name was Semele. She was a Theban princess loved by the god Zeus. When his wife Hera learned of their affair, she tricked the girl into having Zeus swear an oath to appear before her in his full glory. Bound by his pledge the god did so and Semele was consumed by the fire of his lightning-bolts. Zeus recovered their son Dionysos from her womb and upon reaching adulthood he fetched her from the underworld to join the gods on Olympos."
 );
 
-const hephaestus = new God(
-  "Hephaestus",
-  "God of Blacksmiths",
-  "HEPHAISTOS (Hephaestus) was the Olympian god of fire, smiths, craftsmen, metalworking, stonemasonry and sculpture. He was depicted as a bearded man holding a hammer and tongs--the tools of a smith--and sometimes riding a donkey."
+const dionysus = new God(
+  "Dionysus",
+  "God of Wine",
+  "DIONYSUS was the Olympian god of wine, vegetation, pleasure, festivity, madness and wild frenzy. He was depicted as either an older, bearded god or an effeminate, long-haired youth. His attributes included the thyrsos (a pine-cone tipped staff), a drinking cup and a crown of ivy. He was usually accompanied by a troop of Satyrs and Mainades (wild female devotees.)",
+  "Olympus"
 );
 
 export {
@@ -266,4 +404,27 @@ export {
   eurybia,
   metis,
   amphitrite,
+  theOceanids,
+  eos,
+  helios,
+  selene,
+  epimethius,
+  prometheus,
+  atlas,
+  pleione,
+  leto,
+  asteria,
+  perses,
+  pallas,
+  astraeus,
+  theMorai,
+  theHorai,
+  hecate,
+  triton,
+  maia,
+  thePleiades,
+  persephone,
+  ares,
+  hebe,
+  semele,
 };
