@@ -1,4 +1,4 @@
-import { useSyncExternalStore, useEffect } from "react";
+import { useSyncExternalStore, useEffect, useRef } from "react";
 import "./god-profile.css";
 import { useState } from "react";
 import zeusImg from "../../assets/imgs/zeus.webp";
@@ -26,22 +26,7 @@ export default function GodProfile({
 }) {
   const [show, setShow] = useState(false);
 
-  const [mouseCoordinates, setMouseCoordinates] = useState({ x: 0, y: 0 });
-
-  const mouseMoveHandler = (event) => {
-    setMouseCoordinates({
-      x: event.clientX,
-      y: event.clientY,
-    });
-    // console.log(mouseCoordinates);
-  };
-
-  useEffect(() => {
-    window.addEventListener("mousemove", mouseMoveHandler);
-    return () => {
-      window.removeEventListener("mousemove", mouseMoveHandler);
-    };
-  }, []);
+  const elementRef = useRef(null); // Create a ref for the element
 
   const godImages = {
     Zeus: zeusImg,
@@ -65,22 +50,38 @@ export default function GodProfile({
     if (!componentOpen) return;
     handleComponentChange();
     switchBoolean(show);
+    const zoomLevel = getZoomLevel();
+
+    // handleZoomOut(rect.x, rect.y, zoomLevel.scale - 5);
   };
   const handleOpen = (event) => {
     if (componentOpen) return;
+
+    const rect = elementRef.current.getBoundingClientRect();
     handleComponentChange();
     switchBoolean(show);
 
-    const element = document.getElementById("tree");
-
-    const zoomLevel = getZoomLevel();
-    console.log(event.clientX);
-    console.log(zoomLevel.xg);
+    const { scale } = getZoomLevel();
+    if (scale < 0.3) {
+      console.log(scale);
+      handleZoomIn(rect.x, rect.y, 6);
+    }
+    //  else if (scale < 0.3) {
+    //   console.log(scale);
+    // handleZoomIn(rect.x,rect.y, 5);
+    // }
+    else if (scale < 0.5) {
+      console.log(scale);
+      handleZoomIn(rect.x, rect.y, 3);
+    } else if (scale < 0.8) {
+      console.log(scale);
+      handleZoomIn(rect.x, rect.y, 2);
+    }
   };
 
   return (
     <>
-      <div id={godName} className={`god-container ${cssClass} `}>
+      <div ref={elementRef} className={`god-container ${cssClass} `}>
         <h2 className={`${class2} closed-godname`} onClick={handleOpen}>
           {godName}
         </h2>

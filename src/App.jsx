@@ -26,16 +26,10 @@ const App = () => {
 
   useEffect(() => {
     const canvas = panzoom(canvasRef.current, {
-      // autocenter: true,
-      // bounds: true,
-      // boundsPadding: 0.1,
+      autocenter: true,
+
       initialX: 7000,
       initialY: 0,
-      // transformOrigin: { x: 0.5, y: 0.5 },
-
-      // initialZoom: 0.3,
-      // maxZoom: 2,
-      // minZoom: 0.5,
     });
 
     panzoomRef.current = canvas;
@@ -70,7 +64,6 @@ const App = () => {
   };
 
   const element = document.querySelector("tree");
-  console.log(element);
 
   const [componentOpen, setComponentOpen] = useState(false);
 
