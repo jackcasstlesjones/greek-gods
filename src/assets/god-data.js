@@ -1,12 +1,9 @@
 class God {
-  constructor(godName, godTitle, godInfo, family, cssClass, imgSrc) {
+  constructor(godName, godTitle, godInfo, godLink) {
     this.godName = godName;
     this.godTitle = godTitle;
     this.godInfo = godInfo;
-    this.family = family;
-    this.cssClass = cssClass;
-    this.imgSrc = imgSrc;
-    this.show = false;
+    this.godLink = godLink;
   }
 }
 const chaos = new God(
@@ -155,8 +152,9 @@ const amphitrite = new God(
 
 const theOceanids = new God(
   "The Oceanids",
-  "The Water Nymphs",
-  "THE OKEANIDES (Oceanids) were three thousand goddess-nymphs who presided over the sources of earth's fresh-water--from rain-clouds to subterranean springs and fountains. Their numbers included the Nephelai (Cloud-Nymphs), Aurai (Breeze-Nymphs), Naiades (Spring and Fountain Nymphs), Leimonides (Pasture Nymphs), and Anthousai (Flower Nymphs). The eldest among them were numbered among the Titanides (female Titans)--Styx, Dione, Neda, Metis, Klymene, Eurynome, Doris, Elektra, and Pleione. These were most likely heavenly goddesses of the clouds."
+  "Water Nymphs",
+  "THE OKEANIDES (Oceanids) were three thousand goddess-nymphs who presided over the sources of earth's fresh-water--from rain-clouds to subterranean springs and fountains. Their numbers included the Nephelai (Cloud-Nymphs), Aurai (Breeze-Nymphs), Naiades (Spring and Fountain Nymphs), Leimonides (Pasture Nymphs), and Anthousai (Flower Nymphs). The eldest among them were numbered among the Titanides (female Titans)--Styx, Dione, Neda, Metis, Klymene, Eurynome, Doris, Elektra, and Pleione. These were most likely heavenly goddesses of the clouds.",
+  "https://en.wikipedia.org/wiki/Oceanids"
 );
 
 const eos = new God(
@@ -186,7 +184,8 @@ const epimethius = new God(
 const prometheus = new God(
   "Prometheus",
   "God of Forethought",
-  "PROMETHEUS was the Titan god of forethought and crafty counsel who was given the task of moulding mankind out of clay. His attempts to better the lives of his creation brought him into conflict with Zeus. Firstly he tricked the gods out of the best portion of the sacrificial feast, acquiring the meat for the feasting of man. Then, when Zeus withheld fire, he stole it from heaven and delivered it to mortal kind hidden inside a fennel-stalk. As punishment for these rebellious acts, Zeus ordered the creation of Pandora (the first woman) as a means to deliver misfortune into the house of man, or as a way to cheat mankind of the company of the good spirits. Prometheus meanwhile, was arrested and bound to a stake on Mount Kaukasos (Caucasus) where an eagle was set to feed upon his ever-regenerating liver (or, some say, heart). Generations later the great hero Herakles (Heracles) came along and released the old Titan from his torture."
+  "PROMETHEUS was the Titan god of forethought and crafty counsel who was given the task of moulding mankind out of clay. His attempts to better the lives of his creation brought him into conflict with Zeus. Firstly he tricked the gods out of the best portion of the sacrificial feast, acquiring the meat for the feasting of man. Then, when Zeus withheld fire, he stole it from heaven and delivered it to mortal kind hidden inside a fennel-stalk. As punishment for these rebellious acts, Zeus ordered the creation of Pandora (the first woman) as a means to deliver misfortune into the house of man, or as a way to cheat mankind of the company of the good spirits. Prometheus meanwhile, was arrested and bound to a stake on Mount Kaukasos (Caucasus) where an eagle was set to feed upon his ever-regenerating liver (or, some say, heart). Generations later the great hero Herakles (Heracles) came along and released the old Titan from his torture.",
+  "https://en.wikipedia.org/wiki/Prometheus"
 );
 
 const atlas = new God(
@@ -232,15 +231,17 @@ const astraeus = new God(
 );
 
 const theMorai = new God(
-  "The Morai",
+  "The Moirai",
   "Goddesses of Fate",
-  "THE MOIRAI (Moirae) were the three goddesses of fate who personified the inescapable destiny of man. They assigned to every person his or her fate or share in the scheme of things. Their name means 'Parts.' 'Shares' or 'Alottted Portions.' The individuals were Klotho (Clotho), the 'the Spinner,' who spun the thread of life, Lakhesis (Lachesis), 'the Apportioner of Lots', who measured it, and Atropos (or Aisa), 'She who cannot be turned,' who cut it short. Zeus Moiragetes, the god of fate, was their leader."
+  "THE MOIRAI (Moirae) were the three goddesses of fate who personified the inescapable destiny of man. They assigned to every person his or her fate or share in the scheme of things. Their name means 'Parts.' 'Shares' or 'Alottted Portions.' The individuals were Klotho (Clotho), the 'the Spinner,' who spun the thread of life, Lakhesis (Lachesis), 'the Apportioner of Lots', who measured it, and Atropos (or Aisa), 'She who cannot be turned,' who cut it short. Zeus Moiragetes, the god of fate, was their leader.",
+  "https://en.wikipedia.org/wiki/Moirai"
 );
 
 const theHorai = new God(
-  "The Horai",
+  "The Horae",
   "Goddesses of the Seasons",
-  "THE HORAI (Horae) were the goddesses of the seasons and the natural portions of time. They presided over the revolutions of the heavenly constellations by which the year was measured, while their three sisters, the Moirae (Moirae) spinned out the web of fate. The Horai also guarded the gates of Olympos and rallied the stars and constellations of heaven."
+  "THE HORAI (Horae) were the goddesses of the seasons and the natural portions of time. They presided over the revolutions of the heavenly constellations by which the year was measured, while their three sisters, the Moirae (Moirae) spinned out the web of fate. The Horai also guarded the gates of Olympos and rallied the stars and constellations of heaven.",
+  "https://en.wikipedia.org/wiki/Horae"
 );
 
 const hecate = new God(
@@ -264,7 +265,8 @@ const maia = new God(
 const thePleiades = new God(
   "The Pleiades",
   "the Mountain Nymphs",
-  "THE PLEIADES were seven mountain-nymph daughters of the Titan Atlas. Their leader was Maia the mother of Hermes by Zeus. Five of the other Pleiades were also loved by gods becoming ancestresses of various royal families including those of Sparta and Troy. When they were pursued by the lustful giant Orion, Zeus placed them amongst the stars as the constellation Pleiades. Their name means 'Daughters of Pleione' and also 'Ladies of Plenty' from the Greek word pleiôn 'plenty'."
+  "THE PLEIADES were seven mountain-nymph daughters of the Titan Atlas. Their leader was Maia the mother of Hermes by Zeus. Five of the other Pleiades were also loved by gods becoming ancestresses of various royal families including those of Sparta and Troy. When they were pursued by the lustful giant Orion, Zeus placed them amongst the stars as the constellation Pleiades. Their name means 'Daughters of Pleione' and also 'Ladies of Plenty' from the Greek word pleiôn 'plenty'.",
+  "https://en.wikipedia.org/wiki/Pleiades_(Greek_mythology)"
 );
 
 const poseidon = new God(
@@ -314,8 +316,7 @@ const zeus = new God(
   "Zeus",
   "King of the Gods",
   "ZEUS was the King of the Gods and the god of the sky, weather, law and order, destiny and fate, and kingship. He was depicted as a regal, mature man with a sturdy figure and dark beard. His usual attributes were a lightning bolt, a royal sceptre and an eagle.",
-  "Olympus",
-  "span-three"
+  "https://en.wikipedia.org/wiki/Zeus"
 );
 
 const persephone = new God(

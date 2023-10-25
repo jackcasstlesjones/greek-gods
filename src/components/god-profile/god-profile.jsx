@@ -1,5 +1,6 @@
 import { useSyncExternalStore, useEffect, useRef } from "react";
 import "./god-profile.css";
+import arrowIcon from "../../assets/arrow-icon.svg";
 
 import { useState } from "react";
 import zeusImg from "../../assets/imgs/zeus.webp";
@@ -16,6 +17,7 @@ export default function GodProfile({
   godName,
   godTitle,
   godInfo,
+  godLink,
   cssClass,
   class2,
   handleComponentChange,
@@ -23,6 +25,7 @@ export default function GodProfile({
   handleZoomIn,
   handleZoomOut,
   getZoomLevel,
+  replaceLink,
 }) {
   const [show, setShow] = useState(false);
 
@@ -127,10 +130,39 @@ export default function GodProfile({
                   <li>Children</li>
                 </ul>
                 <ul className="relations-list">
-                  <li>Spouse</li>
+                  <li></li>
                 </ul>
               </div>
             </div>
+            <a
+              className={show ? `learn-more-link open-text` : `closed-text`}
+              href={
+                replaceLink
+                  ? godLink
+                  : `https://en.wikipedia.org/wiki/${godName}`
+              }
+            >
+              <div className="learn-more-container">
+                <h3>Learn More</h3>
+                <div className="arrow-icon">
+                  <svg
+                    className="arrow-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1}
+                    stroke="currentColor"
+                    className="w-6 h-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </a>
           </div>
           <div className="right-side">
             <img className="god-img" src={img} alt="" />
