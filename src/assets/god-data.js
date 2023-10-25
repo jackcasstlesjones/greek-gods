@@ -1,14 +1,20 @@
 class God {
-  constructor(godName, godTitle, info, family, cssClass, imgSrc) {
+  constructor(godName, godTitle, godInfo, family, cssClass, imgSrc) {
     this.godName = godName;
     this.godTitle = godTitle;
-    this.info = info;
+    this.godInfo = godInfo;
     this.family = family;
     this.cssClass = cssClass;
     this.imgSrc = imgSrc;
     this.show = false;
   }
 }
+
+const chaos = new God(
+  "Chaos",
+  "First of the Primordial Gods",
+  "CHAOS was the first of the primordial gods to emerge at the dawn of creation. Khaos was the lower atmosphere which surrounds the earth--both the invisible air and the gloom of fog and mist. The word khaos means 'gap' or 'chasm' being the space between heaven and earth. She was also a goddess of fate like her daughter Nyx and grand-daughters the Moirai (Moirae). As the goddess of the air Khaos was also the mother of birds, just as Gaia (the Earth) was the mother of land animals, and Thalassa (the Sea) was the mother of fish."
+);
 
 const zeus = new God(
   "Zeus",
@@ -105,4 +111,5 @@ export {
   hermes,
   hephaestus,
   aphrodite,
+  chaos,
 };

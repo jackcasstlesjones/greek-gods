@@ -22,7 +22,6 @@ export default function GodProfile({
   handleZoomIn,
   handleZoomOut,
   getZoomLevel,
-  handlePan,
 }) {
   const [show, setShow] = useState(false);
 
