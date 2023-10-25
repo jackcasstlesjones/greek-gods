@@ -191,7 +191,8 @@ const prometheus = new God(
 const atlas = new God(
   "Atlas",
   "God who Carried the Sky",
-  "ATLAS was the Titan god who bore the sky aloft. He personified the quality of endurance (atlaô). Atlas was a leader of the Titanes (Titans) in their war against Zeus and after their defeat he was condemned to carry the heavens upon his shoulders. According to others he was instead (or later) appointed guardian of the pillars which held the earth and sky asunder. Atlas was also the god who instructed mankind in the art of astronomy, a tool which was used by sailors in navigation and farmers in measuring the seasons. These roles were often combined and Atlas becomes the god who turns the heaven on their axis, causing the stars to revolve."
+  "ATLAS was the Titan god who bore the sky aloft. He personified the quality of endurance (atlaô). Atlas was a leader of the Titanes (Titans) in their war against Zeus and after their defeat he was condemned to carry the heavens upon his shoulders. According to others he was instead (or later) appointed guardian of the pillars which held the earth and sky asunder. Atlas was also the god who instructed mankind in the art of astronomy, a tool which was used by sailors in navigation and farmers in measuring the seasons. These roles were often combined and Atlas becomes the god who turns the heaven on their axis, causing the stars to revolve.",
+  "https://en.wikipedia.org/wiki/Atlas_(mythology)"
 );
 
 const pleione = new God(
