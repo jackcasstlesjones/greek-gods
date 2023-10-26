@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { render } from "react-dom";
+import { v4 as uuidv4 } from "uuid";
+
 import panzoom from "panzoom";
 import "./App.css";
 import GodProfile from "./components/god-profile/god-profile";
@@ -153,6 +155,7 @@ const App = () => {
           getZoomLevel={getZoomLevel}
           componentOpen={componentOpen}
           {...chaos}
+          uuid={uuidv4()}
         />
         <div className="space"></div>
         <div className="space"></div>
