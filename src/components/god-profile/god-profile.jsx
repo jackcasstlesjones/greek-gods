@@ -93,8 +93,7 @@ export default function GodProfile({
         <h2 className={`${class2} closed-godname`} onClick={handleOpen}>
           {godName}
         </h2>
-        <div className="modal"></div>
-        <div className={openGod === uuid ? `modal open` : "closed"}>
+        <div className={openGod === uuid ? `open` : "closed"}>
           <div className="left-side">
             <h2
               className={
@@ -109,7 +108,7 @@ export default function GodProfile({
               }
             >
               <p className="god-info">{godInfo}</p>
-              <div className="relations-container">
+              {/* <div className="relations-container">
                 <ul className="relations-list">
                   <li>Parents</li>
                   <li>
@@ -126,7 +125,7 @@ export default function GodProfile({
                 <ul className="relations-list">
                   <li></li>
                 </ul>
-              </div>
+              </div> */}
             </div>
             <a
               className={

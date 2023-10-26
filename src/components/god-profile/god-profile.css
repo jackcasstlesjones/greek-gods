@@ -60,27 +60,19 @@ h2 {
 
 .open {
   display: flex;
-  justify-content: center;
+  /* justify-content: space-between; */
   z-index: 999;
   transition: height 0.3s ease-out 0s, width 1.3s ease-out 0.3s, font-style 0s;
   color: black;
-
   position: absolute;
-  /* top: -300%; */
   background-color: white;
-
-  height: 400px;
-  width: 655px;
-}
-
-.opacity-full {
-  opacity: 1;
+  height: 500px;
+  width: 850px;
+  align-items: spa;
 }
 
 .open-godname {
-  /* font-style: italic; */
   font-size: 32px;
-
   font-weight: bold;
   border-bottom: black 2px double;
   padding: 20px 0px 20px 20px;
@@ -89,7 +81,7 @@ h2 {
 
 .left-side {
   position: relative;
-  width: 459px;
+  width: 600px;
   font-weight: 500;
 }
 
@@ -102,7 +94,7 @@ h2 {
 
 .god-info {
   line-height: 1.4;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .relations-container {
@@ -120,7 +112,7 @@ h2 {
   margin-bottom: 10px;
 }
 .right-side {
-  width: 200px;
+  width: 250px;
   overflow: hidden;
 }
 
@@ -132,13 +124,14 @@ h2 {
 
 .learn-more-container {
   position: absolute;
+  justify-content: center;
   bottom: 0;
   right: 0;
   margin-left: auto;
   background-color: rgb(221, 221, 221);
   display: flex;
   width: 160px;
-  padding: 10px 20px;
+  padding: 20px 38px 20px 30px;
   align-items: center;
 }
 
@@ -148,8 +141,8 @@ h2 {
 
 .arrow-icon {
   margin-left: auto;
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   font-weight: 100;
 }
 
@@ -162,8 +155,8 @@ h2 {
   position: absolute;
   right: 10px;
   top: 10px;
-  height: 22px;
-  width: 22px;
+  height: 30px;
+  width: 30px;
   background-color: white;
   border: none;
   display: flex;
