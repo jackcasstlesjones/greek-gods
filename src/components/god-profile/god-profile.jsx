@@ -21,14 +21,12 @@ export default function GodProfile({
   godLink,
   cssClass,
   class2,
-  handleComponentChange,
-  componentOpen,
   handleZoomIn,
   handleZoomOut,
   getZoomLevel,
+  handleGodChange,
+  openGod,
 }) {
-  const [show, setShow] = useState(false);
-
   const elementRef = useRef(null); // Create a ref for the element
 
   const godImages = {
@@ -45,52 +43,48 @@ export default function GodProfile({
 
   const img = godImages[godName];
 
-  function switchBoolean(value) {
-    setShow(!value);
-  }
-
   const handleCloseButtonClick = () => {
-    if (!componentOpen) return;
-    handleComponentChange();
-    switchBoolean(show);
+    handleGodChange("");
 
     const rect = elementRef.current.getBoundingClientRect();
-    handleZoomOut(rect.x, rect.y, 0.4);
+    handleZoomOut(rect.x, rect.y, 0.6);
   };
-  const handleOpen = (event) => {
-    if (componentOpen) return;
 
+  const handleOpen = (event) => {
+    handleGodChange(uuid);
+
+    /**ZOOM FUNCTIONALITY */
     const rect = elementRef.current.getBoundingClientRect();
-    handleComponentChange();
-    switchBoolean(show);
     const { scale } = getZoomLevel();
     console.log(scale);
 
     if (scale <= 0.2) {
       console.log(scale);
-      handleZoomIn(rect.x, rect.y, 5);
+      handleZoomIn(rect.x, rect.y, 4);
     } else if (scale <= 0.3) {
       console.log(scale);
-      handleZoomIn(rect.x, rect.y, 4);
+      handleZoomIn(rect.x, rect.y, 3);
     } else if (scale <= 0.4) {
       console.log(scale);
-      handleZoomIn(rect.x, rect.y, 3);
+      handleZoomIn(rect.x, rect.y, 2.25);
     } else if (scale <= 0.5) {
       console.log(scale);
-      handleZoomIn(rect.x, rect.y, 2.5);
+      handleZoomIn(rect.x, rect.y, 1.7);
     } else if (scale <= 0.6) {
       console.log(scale);
-      handleZoomIn(rect.x, rect.y, 1.8);
+      handleZoomIn(rect.x, rect.y, 1.5);
     } else if (scale <= 0.7) {
       console.log(scale);
-      handleZoomIn(rect.x, rect.y, 1.5);
-    } else if (scale <= 0.8) {
-      console.log(scale);
-      handleZoomIn(rect.x, rect.y, 1.3);
-    } else if (scale <= 0.9) {
-      console.log(scale);
-      handleZoomIn(rect.x, rect.y, 1);
+      handleZoomIn(rect.x, rect.y, 1.4);
     }
+    //  else if (scale <= 0.7) {
+    //   console.log(scale);
+    //   handleZoomIn(rect.x, rect.y, 1.2);
+    // }
+    // else if (scale <= 0.9) {
+    //   console.log(scale);
+    //   handleZoomIn(rect.x, rect.y, 1);
+    // }
   };
 
   return (
@@ -100,24 +94,24 @@ export default function GodProfile({
           {godName}
         </h2>
         <div className="modal"></div>
-        <div className={show === true ? `modal open` : "closed"}>
+        <div className={openGod === uuid ? `modal open` : "closed"}>
           <div className="left-side">
             <h2
               className={
-                show === true ? "open-godname open-text" : "closed-text"
+                openGod === uuid ? "open-godname open-text" : "closed-text"
               }
             >
               {godName}, {godTitle}
             </h2>
             <div
               className={
-                show === true ? "small-container open-text" : "closed-text"
+                openGod === uuid ? "small-container open-text" : "closed-text"
               }
             >
               <p className="god-info">{godInfo}</p>
               <div className="relations-container">
                 <ul className="relations-list">
-                  <li>{uuid}</li>
+                  <li>Parents</li>
                   <li>
                     <a href="#prometheus">Prometheus</a>
                   </li>
@@ -135,7 +129,9 @@ export default function GodProfile({
               </div>
             </div>
             <a
-              className={show ? `learn-more-link open-text` : `closed-text`}
+              className={
+                openGod === uuid ? `learn-more-link open-text` : `closed-text`
+              }
               target="_blank"
               rel="nonreferrer"
               href={
@@ -169,7 +165,7 @@ export default function GodProfile({
             <button
               onClick={handleCloseButtonClick}
               className={
-                show === true ? "close-button open-text" : "closed-text"
+                openGod === uuid ? "close-button open-text" : "closed-text"
               }
             >
               <svg

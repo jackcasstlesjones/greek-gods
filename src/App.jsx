@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import { render } from "react-dom";
-import { v4 as uuidv4 } from "uuid";
 
 import panzoom from "panzoom";
 import "./App.css";
@@ -102,11 +101,11 @@ const App = () => {
     }
   };
 
-  const handlePan = (xValue, yValue) => {
-    if (panzoomRef.current) {
-      panzoomRef.current.smoothMoveTo(xValue, yValue);
-    }
-  };
+  // const handlePan = (xValue, yValue) => {
+  //   if (panzoomRef.current) {
+  //     panzoomRef.current.smoothMoveTo(xValue, yValue);
+  //   }
+  // };
 
   const getZoomLevel = () => {
     if (panzoomRef.current) {
@@ -114,12 +113,10 @@ const App = () => {
     }
   };
 
-  const element = document.querySelector("tree");
+  const [openGod, setOpenGod] = useState("");
 
-  const [componentOpen, setComponentOpen] = useState(false);
-
-  const handleComponentChange = () => {
-    setComponentOpen((prevState) => !prevState);
+  const handleGodChange = (uuid) => {
+    setOpenGod(uuid);
   };
 
   return (
@@ -149,11 +146,11 @@ const App = () => {
         <div className="space"></div>
         {/* ↓↓↓ ZEUS LINE, AFTER THIS THERE SHOULD BE 16 ELEMENTS */}
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...chaos}
         />
         <div className="space"></div>
@@ -211,8 +208,8 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <GodProfile
-          componentOpen={componentOpen}
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
@@ -223,8 +220,8 @@ const App = () => {
         <Line value="connectDown" />
         <Line value="across" />
         <GodProfile
-          componentOpen={componentOpen}
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
@@ -283,8 +280,8 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <GodProfile
-          componentOpen={componentOpen}
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
@@ -295,8 +292,8 @@ const App = () => {
         <Line value="connectDown" />
         <Line value="across" />
         <GodProfile
-          componentOpen={componentOpen}
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
@@ -355,12 +352,11 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <GodProfile
-          componentOpen={componentOpen}
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...gaia}
         />
         <Line value="across" />
@@ -368,8 +364,8 @@ const App = () => {
         <Line value="connectDown" />
         <Line value="across" />
         <GodProfile
-          componentOpen={componentOpen}
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
@@ -433,12 +429,11 @@ const App = () => {
         <Line value={"vertical"} />
         <div className="space"></div>
         <GodProfile
-          componentOpen={componentOpen}
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...aphrodite}
         />
         <div className="space"></div>
@@ -485,143 +480,129 @@ const App = () => {
         <div className="space"></div>
         {/**ROW 11 */}
         <GodProfile
-          componentOpen={componentOpen}
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...mnemosyne}
         />
         <div className="space"></div>
         <GodProfile
-          componentOpen={componentOpen}
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...oceanus}
         />
         <Line value={"connectDown"} />
         <GodProfile
-          componentOpen={componentOpen}
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...tethys}
         />
         <div className="space"></div>
         <GodProfile
-          componentOpen={componentOpen}
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...iapetus}
         />
         <div className="space"></div>
         <GodProfile
-          componentOpen={componentOpen}
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...klymene}
         />
         <div className="space"></div>
         <GodProfile
-          componentOpen={componentOpen}
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...kronos}
         />
         {/**ZEUS LINE */}
         <Line value={"connectFour"} />
         <GodProfile
-          componentOpen={componentOpen}
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...rhea}
         />
         <div className="space"></div>
         <GodProfile
-          componentOpen={componentOpen}
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...themis}
         />
         <div className="space"></div>
         <GodProfile
-          componentOpen={componentOpen}
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...hyperion}
         />
         <Line value={"connectDown"} />
         <GodProfile
-          componentOpen={componentOpen}
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...theia}
         />
         <div className="space"></div>
         <GodProfile
-          componentOpen={componentOpen}
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...koios}
         />
         <Line value={"connectDown"} />
         <GodProfile
-          componentOpen={componentOpen}
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...phoebe}
         />
         <div className="space"></div>
         <GodProfile
-          componentOpen={componentOpen}
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...krios}
         />
         <Line value={"connectDown"} />
         <GodProfile
-          componentOpen={componentOpen}
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...eurybia}
         />
         {/**ROW 12 */}
@@ -658,28 +639,28 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...metis}
         />
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...amphitrite}
         />
 
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...theOceanids}
         />
         <div className="space"></div>
@@ -696,29 +677,29 @@ const App = () => {
         <Line value={"vertical"} />
         <div className="space"></div>
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...eos}
         />
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...helios}
           x
         />
 
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...selene}
         />
         <div className="space"></div>
@@ -739,36 +720,36 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...epimethius}
         />
         <GodProfile
-          componentOpen={componentOpen}
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
           {...prometheus}
         />
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...atlas}
         />
         <Line value={"connectDown"} />
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...pleione}
         />
 
@@ -784,46 +765,46 @@ const App = () => {
         <div className="space"></div>
         <Line id="king-line" value={"cornerLeft"} />
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...leto}
         />
         <div className="space"></div>
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...asteria}
         />
         <Line value={"connectDown"} />
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...perses}
         />
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...pallas}
         />
 
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...astraeus}
         />
 
@@ -844,20 +825,20 @@ const App = () => {
         <Line value={"vertical"} />
         <Line id="king-line" value={"vertical"} />
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...theMorai}
         />
         <div className="space"></div>
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...theHorai}
         />
         <div className="space"></div>
@@ -868,11 +849,11 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...hecate}
         />
         <div className="space"></div>
@@ -884,11 +865,11 @@ const App = () => {
         <div className="space"></div>
         <Line id="king-line" value={"vertical"} />
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...triton}
         />
         <div className="space"></div>
@@ -896,20 +877,20 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...maia}
         />
         <Line id="king-line" value={"cornerRight"} />
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...thePleiades}
         />
 
@@ -968,38 +949,38 @@ const App = () => {
         <Line id="king-line" value={"vertical"} />
         <Line value={"rightAndUp"} />
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...poseidon}
         />
         <div className="space"></div>
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...hestia}
         />
         <div className="space"></div>
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...hera}
         />
         <Line id="king-line" value={"rightAndUp"} />
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...hermes}
         />
 
@@ -1009,11 +990,11 @@ const App = () => {
         <div className="space"></div>
         <Line value={"cornerLeft"} />
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...demeter}
         />
         <div className="space"></div>
@@ -1021,11 +1002,11 @@ const App = () => {
         <div className="space"></div>
         <Line id="king-line" value={"vertical"} />
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...hades}
         />
         <div className="space"></div>
@@ -1078,12 +1059,12 @@ const App = () => {
         <Line id="king-line" value={"connectFour"} />
         <Line id="king-line" value={"across"} />
         <GodProfile
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           id="zeus"
-          handleComponentChange={handleComponentChange}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...zeus}
           cssClass="zeus"
           class2={"large-text"}
@@ -1094,11 +1075,11 @@ const App = () => {
 
         {/* <Line value={"across"} /> */}
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...persephone}
         />
         <Line value={"across"} />
@@ -1121,11 +1102,11 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...athena}
         />
         <div className="space"></div>
@@ -1191,29 +1172,29 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...hephaestus}
         />
         <div className="space"></div>
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...ares}
         />
         <div className="space"></div>
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...hebe}
         />
 
@@ -1223,20 +1204,20 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...apollo}
         />
         <div className="space"></div>
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...artemis}
         />
         <div className="space"></div>
@@ -1292,11 +1273,11 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...semele}
         />
         <Line id="king-line" value={"across"} />
@@ -1330,11 +1311,11 @@ const App = () => {
         <div className="space"></div>
         <div className="space"></div>
         <GodProfile
-          handleComponentChange={handleComponentChange}
+          handleGodChange={handleGodChange}
+          openGod={openGod}
           handleZoomIn={handleZoomIn}
           handleZoomOut={handleZoomOut}
           getZoomLevel={getZoomLevel}
-          componentOpen={componentOpen}
           {...dionysus}
         />
         <div className="space"></div>
