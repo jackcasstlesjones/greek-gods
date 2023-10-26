@@ -83,7 +83,8 @@ const iapetus = new God(
 const klymene = new God(
   "Klymene",
   "Goddess of Fame",
-  "KLYMENE (Clymene) was one of the elder Okeanides and the Titan goddess of fame and renown. She was the wife of the Titan Iapetos and the mother of Prometheus and Atlas. Klymene was also named Asia and in this guise portrayed as the eponymous goddess of Anatolia (Asia Minor)."
+  "KLYMENE (Clymene) was one of the elder Okeanides and the Titan goddess of fame and renown. She was the wife of the Titan Iapetos and the mother of Prometheus and Atlas. Klymene was also named Asia and in this guise portrayed as the eponymous goddess of Anatolia (Asia Minor).",
+  "https://en.wikipedia.org/wiki/Clymene_(wife_of_Iapetus)"
 );
 
 const kronos = new God(

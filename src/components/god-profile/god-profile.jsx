@@ -135,6 +135,8 @@ export default function GodProfile({
             </div>
             <a
               className={show ? `learn-more-link open-text` : `closed-text`}
+              target="_blank"
+              rel="nonreferrer"
               href={
                 godLink ? godLink : `https://en.wikipedia.org/wiki/${godName}`
               }
