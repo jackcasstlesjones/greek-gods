@@ -14,6 +14,7 @@ import athenaImg from "../../assets/imgs/athena.jpeg";
 import heraImg from "../../assets/imgs/hera.webp";
 
 export default function GodProfile({
+  uuid,
   godName,
   godTitle,
   godInfo,
@@ -25,7 +26,6 @@ export default function GodProfile({
   handleZoomIn,
   handleZoomOut,
   getZoomLevel,
-  uuid,
 }) {
   const [show, setShow] = useState(false);
 
@@ -117,7 +117,7 @@ export default function GodProfile({
               <p className="god-info">{godInfo}</p>
               <div className="relations-container">
                 <ul className="relations-list">
-                  <li>Parents</li>
+                  <li>{uuid}</li>
                   <li>
                     <a href="#prometheus">Prometheus</a>
                   </li>

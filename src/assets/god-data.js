@@ -1,5 +1,8 @@
+import { v4 as uuidv4 } from "uuid";
+
 class God {
   constructor(godName, godTitle, godInfo, godLink, replaceLink) {
+    this.uuid = uuidv4();
     this.godName = godName;
     this.godTitle = godTitle;
     this.godInfo = godInfo;

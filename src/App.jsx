@@ -155,7 +155,6 @@ const App = () => {
           getZoomLevel={getZoomLevel}
           componentOpen={componentOpen}
           {...chaos}
-          uuid={uuidv4()}
         />
         <div className="space"></div>
         <div className="space"></div>
