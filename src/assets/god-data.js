@@ -7,7 +7,6 @@ class God {
     this.godTitle = godTitle;
     this.godInfo = godInfo;
     this.godLink = godLink;
-    this.replaceLink = replaceLink;
   }
 }
 const chaos = new God(
@@ -26,7 +25,8 @@ const nyx = new God(
 const aither = new God(
   "Aether",
   "God of Light",
-  "AITHER (Aether) was the primordial god (protogenos) of light and the bright, blue ether of the heavens. His mists filled the space between the solid dome of the sky (ouranos) and the transparent mists of the earth-bound air (khaos, aer). In the evening his mother Nyx drew her dark veil across the sky, obscuring the ether and bringing night. In the morn his sister and wife Hemera dispersed night's mist to reveal the shining blue ether of day. In the ancient cosmogonies night and day were regarded as elements separate from the sun. Aither was one of the three 'airs'. The middle air was aer or khaos, a colourless mist which enveloped the mortal world. The lower air was erebos, the mists of darkness, which enveloped the dark places beneath the earth and the realm of the dead. The third was the upper air of aither, the mist of light and blue of the heavenly ether. The aither enveloped the mountain peaks, clouds, stars, sun and moon. Aether's female counterpart was Aithre (Aethra), Titaness of the clear blue sky and mother of the sun and moon."
+  "AITHER (Aether) was the primordial god (protogenos) of light and the bright, blue ether of the heavens. His mists filled the space between the solid dome of the sky (ouranos) and the transparent mists of the earth-bound air (khaos, aer). In the evening his mother Nyx drew her dark veil across the sky, obscuring the ether and bringing night. In the morn his sister and wife Hemera dispersed night's mist to reveal the shining blue ether of day. In the ancient cosmogonies night and day were regarded as elements separate from the sun. Aither was one of the three 'airs'. The middle air was aer or khaos, a colourless mist which enveloped the mortal world. The lower air was erebos, the mists of darkness, which enveloped the dark places beneath the earth and the realm of the dead. The third was the upper air of aither, the mist of light and blue of the heavenly ether. The aither enveloped the mountain peaks, clouds, stars, sun and moon. Aether's female counterpart was Aithre (Aethra), Titaness of the clear blue sky and mother of the sun and moon.",
+  "https://en.wikipedia.org/wiki/Aether_(mythology)"
 );
 
 const erebus = new God(
@@ -74,7 +74,8 @@ const oceanus = new God(
 const tethys = new God(
   "Tethys",
   "Goddess of Fresh Water",
-  "TETHYS was the Titan goddess of the primal font of fresh water which nourishes the earth. She was the wife of Okeanos (Oceanus), the earth-encircling, fresh-water stream, and the mother of the Potamoi (Rivers), the Okeanides (Oceanids) (nymphs of springs, streams and fountains), and the Nephelai (Clouds). Tethys, daughter of Gaia (Earth), fed her children's springs with the waters of Okeanos drawn through subterranean acquifers. Her name was derived from the Greek word têthê meaning 'nurse' or 'grandmother'."
+  "TETHYS was the Titan goddess of the primal font of fresh water which nourishes the earth. She was the wife of Okeanos (Oceanus), the earth-encircling, fresh-water stream, and the mother of the Potamoi (Rivers), the Okeanides (Oceanids) (nymphs of springs, streams and fountains), and the Nephelai (Clouds). Tethys, daughter of Gaia (Earth), fed her children's springs with the waters of Okeanos drawn through subterranean acquifers. Her name was derived from the Greek word têthê meaning 'nurse' or 'grandmother'.",
+  "https://en.wikipedia.org/wiki/Tethys_(mythology)"
 );
 
 const iapetus = new God(
@@ -93,13 +94,15 @@ const klymene = new God(
 const kronos = new God(
   "Kronos",
   "God of Time",
-  "KRONOS (Cronus) was the King of the Titanes and the god of time, in particular time when viewed as a destructive, all-devouring force. He ruled the cosmos during the Golden Age after castrating and deposing his father Ouranos (Uranus, Sky). In fear of a prophecy that he would in turn be overthrown by his own son, Kronos swallowed each of his children as they were born. Rhea managed to save the youngest, Zeus, by hiding him away on the island of Krete (Crete), and fed Kronos a stone wrapped in swaddling clothes. The god grew up, forced Kronos to disgorge his swallowed offspring, and led the Olympians in a ten year war against the Titanes (Titans), driving them in defeat into the pit of Tartaros (Tartarus)."
+  "KRONOS (Cronus) was the King of the Titanes and the god of time, in particular time when viewed as a destructive, all-devouring force. He ruled the cosmos during the Golden Age after castrating and deposing his father Ouranos (Uranus, Sky). In fear of a prophecy that he would in turn be overthrown by his own son, Kronos swallowed each of his children as they were born. Rhea managed to save the youngest, Zeus, by hiding him away on the island of Krete (Crete), and fed Kronos a stone wrapped in swaddling clothes. The god grew up, forced Kronos to disgorge his swallowed offspring, and led the Olympians in a ten year war against the Titanes (Titans), driving them in defeat into the pit of Tartaros (Tartarus).",
+  "https://en.wikipedia.org/wiki/Cronus"
 );
 
 const rhea = new God(
   "Rhea",
   "Mother of the Gods",
-  "RHEIA (Rhea) was the Titanis (Titaness) mother of the gods, and goddess of female fertility, motherhood, and generation. Her name means 'flow' and 'ease.' As the wife of Kronos (Cronus, Time), she represented the eternal flow of time and generations; as the great Mother (Meter Megale), the 'flow' was menstrual blood, birth waters, and milk. She was also a goddess of comfort and ease, a blessing reflected in the common Homeric phrase 'the gods who live at their ease (rhea).' In myth, Rhea was the wife of the Titan Kronos (Cronus) and Queen of Heaven. When her husband heard a prophecy that he would be deposed by one of his children, he took to swallowing each of them as soon as they were born. But Rhea bore her youngest, Zeus, in secret and hid him away in a cave in Krete (Crete) guarded by shield-clashing Kouretes (Curetes). In his stead she presented Kronos with a stone wrapped in swaddling clothes which he promptly devoured. Rhea was closely identified with the Anatolian mother-goddess Kybele (Cybele). They were both depicted as matronly women, usually wearing a turret crown, and attended by lions."
+  "RHEIA (Rhea) was the Titanis (Titaness) mother of the gods, and goddess of female fertility, motherhood, and generation. Her name means 'flow' and 'ease.' As the wife of Kronos (Cronus, Time), she represented the eternal flow of time and generations; as the great Mother (Meter Megale), the 'flow' was menstrual blood, birth waters, and milk. She was also a goddess of comfort and ease, a blessing reflected in the common Homeric phrase 'the gods who live at their ease (rhea).' In myth, Rhea was the wife of the Titan Kronos (Cronus) and Queen of Heaven. When her husband heard a prophecy that he would be deposed by one of his children, he took to swallowing each of them as soon as they were born. But Rhea bore her youngest, Zeus, in secret and hid him away in a cave in Krete (Crete) guarded by shield-clashing Kouretes (Curetes). In his stead she presented Kronos with a stone wrapped in swaddling clothes which he promptly devoured. Rhea was closely identified with the Anatolian mother-goddess Kybele (Cybele). They were both depicted as matronly women, usually wearing a turret crown, and attended by lions.",
+  "https://en.wikipedia.org/wiki/Rhea_(mythology)"
 );
 
 const themis = new God(
@@ -111,7 +114,8 @@ const themis = new God(
 const hyperion = new God(
   "Hyperion",
   "God of Heavenly Light",
-  "HYPERION was the Titan god of heavenly light, one of the sons of Ouranos (Uranus, Heaven) and Gaia (Gaea, Earth), and the father of the lights of heaven--Eos the Dawn, Helios the Sun, and Selene the Moon. His wife was Theia, lady of the aither--the shining blue of the sky. Hyperion's name means 'watcher from above' or 'he who goes above' from the greek words hyper and iôn."
+  "HYPERION was the Titan god of heavenly light, one of the sons of Ouranos (Uranus, Heaven) and Gaia (Gaea, Earth), and the father of the lights of heaven--Eos the Dawn, Helios the Sun, and Selene the Moon. His wife was Theia, lady of the aither--the shining blue of the sky. Hyperion's name means 'watcher from above' or 'he who goes above' from the greek words hyper and iôn.",
+  "https://en.wikipedia.org/wiki/Hyperion_(Titan)"
 );
 
 const theia = new God(
@@ -129,25 +133,29 @@ const koios = new God(
 const phoebe = new God(
   "Phoebe",
   "Goddess of Intellect",
-  "PHOIBE (Phoebe) was the Titan goddess of the bright intellect. She was wife of the Titan Koios (Coeus) 'the Inquiring' and the grandmother of Apollon, Artemis and Hekate. Phoibe was the third goddess to hold the great oracle of Delphoi (Delphi) which she in turn bestowed upon her grandson Apollon. Her name was derived from the Greek words phoibos 'bright' or 'radiant', phoibazô 'to prophesy' and phoibaô 'to purify'."
+  "PHOIBE (Phoebe) was the Titan goddess of the bright intellect. She was wife of the Titan Koios (Coeus) 'the Inquiring' and the grandmother of Apollon, Artemis and Hekate. Phoibe was the third goddess to hold the great oracle of Delphoi (Delphi) which she in turn bestowed upon her grandson Apollon. Her name was derived from the Greek words phoibos 'bright' or 'radiant', phoibazô 'to prophesy' and phoibaô 'to purify'.",
+  "https://en.wikipedia.org/wiki/Phoebe_(Titaness)"
 );
 
 const krios = new God(
   "Krios",
   "a Titan Brother",
-  "KRIOS (Crius) was one of the elder Titanes (Titans), sons of Ouranos (Uranus, Sky) and Gaia (Gaea, Earth). Led by Kronos (Cronus), the brothers conspired against their father and prepared an ambush as he descended to lie with Earth. Krios, Koios (Coeus), Hyperion and Iapetos (Iapetus) were posted at the four corners of the world where they seized hold of the sky-god and held him firm, while Kronos, hidden in the centre, castrated him with a sickle. In this myth the four brothers probably represent the four cosmic pillars separating heaven and earth which are described in near-Eastern cosmogonies. Krios was likely the southern pillar, while his brothers Koios, Iapetos, and Hyperion were the pillars of the north, east and west respectively. Krios' connection with the south is found both in his name and family connections:-he is 'the Ram,' the constellation Aries, whose springtime rising in the south marked the start of the Greek year; his eldest son is Astraios (Astraeus), god of the stars; and his wife is Eurybia, a daughter of the sea."
+  "KRIOS (Crius) was one of the elder Titanes (Titans), sons of Ouranos (Uranus, Sky) and Gaia (Gaea, Earth). Led by Kronos (Cronus), the brothers conspired against their father and prepared an ambush as he descended to lie with Earth. Krios, Koios (Coeus), Hyperion and Iapetos (Iapetus) were posted at the four corners of the world where they seized hold of the sky-god and held him firm, while Kronos, hidden in the centre, castrated him with a sickle. In this myth the four brothers probably represent the four cosmic pillars separating heaven and earth which are described in near-Eastern cosmogonies. Krios was likely the southern pillar, while his brothers Koios, Iapetos, and Hyperion were the pillars of the north, east and west respectively. Krios' connection with the south is found both in his name and family connections:-he is 'the Ram,' the constellation Aries, whose springtime rising in the south marked the start of the Greek year; his eldest son is Astraios (Astraeus), god of the stars; and his wife is Eurybia, a daughter of the sea.",
+  "https://en.wikipedia.org/wiki/Crius"
 );
 
 const eurybia = new God(
   "Eurybia",
   "Goddess of Mastery of the Sea",
-  "EURYBIA was the goddess of power over, and mastery of, the sea. She apparently presided over external forces which influence the main such as the rise of the constellations, seasonal weather, and the power of the winds. Eurybia was the wife of the Titan Krios (Crius) and the grandmother of a variety of divinities with power over the sea. These included the Anemoi (Winds), the Astra (Stars), Hekate (Lady of Witchraft), Selene (the Moon), Nike (Victory), Bia (Force), Kratos (Power), Zelos (Rivalry). Some of these also represent human mastery of the seas such as the winds for sailing, stars for navigation, and force, power and victory representing naval supremacy."
+  "EURYBIA was the goddess of power over, and mastery of, the sea. She apparently presided over external forces which influence the main such as the rise of the constellations, seasonal weather, and the power of the winds. Eurybia was the wife of the Titan Krios (Crius) and the grandmother of a variety of divinities with power over the sea. These included the Anemoi (Winds), the Astra (Stars), Hekate (Lady of Witchraft), Selene (the Moon), Nike (Victory), Bia (Force), Kratos (Power), Zelos (Rivalry). Some of these also represent human mastery of the seas such as the winds for sailing, stars for navigation, and force, power and victory representing naval supremacy.",
+  "https://en.wikipedia.org/wiki/Eurybia_(mythology)"
 );
 
 const metis = new God(
   "Metis",
   "Goddess of Good Counsel",
-  "METIS was one of the elder Okeanides and the Titan-goddess of good counsel, planning, cunning and wisdom. She was a counsellor of Zeus during the Titan War and hatched the plan through which Kronos (Cronus) was forced to regurgitate his devoured children. In an odd reversal of fortune, Zeus swallowed Metis whole when a prophecy was revealed that she was destined to bear a son greater than his father. Metis afterwards bore a daughter, Athena, within the very belly of the god and equipped her with arms and armour before she was rebirthed from the god's head."
+  "METIS was one of the elder Okeanides and the Titan-goddess of good counsel, planning, cunning and wisdom. She was a counsellor of Zeus during the Titan War and hatched the plan through which Kronos (Cronus) was forced to regurgitate his devoured children. In an odd reversal of fortune, Zeus swallowed Metis whole when a prophecy was revealed that she was destined to bear a son greater than his father. Metis afterwards bore a daughter, Athena, within the very belly of the god and equipped her with arms and armour before she was rebirthed from the god's head.",
+  "https://en.wikipedia.org/wiki/Metis_(mythology)"
 );
 
 const amphitrite = new God(
@@ -159,7 +167,8 @@ const amphitrite = new God(
 const theOceanids = new God(
   "The Oceanids",
   "Water Nymphs",
-  "THE OKEANIDES (Oceanids) were three thousand goddess-nymphs who presided over the sources of earth's fresh-water--from rain-clouds to subterranean springs and fountains. Their numbers included the Nephelai (Cloud-Nymphs), Aurai (Breeze-Nymphs), Naiades (Spring and Fountain Nymphs), Leimonides (Pasture Nymphs), and Anthousai (Flower Nymphs). The eldest among them were numbered among the Titanides (female Titans)--Styx, Dione, Neda, Metis, Klymene, Eurynome, Doris, Elektra, and Pleione. These were most likely heavenly goddesses of the clouds."
+  "THE OKEANIDES (Oceanids) were three thousand goddess-nymphs who presided over the sources of earth's fresh-water--from rain-clouds to subterranean springs and fountains. Their numbers included the Nephelai (Cloud-Nymphs), Aurai (Breeze-Nymphs), Naiades (Spring and Fountain Nymphs), Leimonides (Pasture Nymphs), and Anthousai (Flower Nymphs). The eldest among them were numbered among the Titanides (female Titans)--Styx, Dione, Neda, Metis, Klymene, Eurynome, Doris, Elektra, and Pleione. These were most likely heavenly goddesses of the clouds.",
+  "https://en.wikipedia.org/wiki/Oceanids"
 );
 
 const eos = new God(
@@ -181,7 +190,7 @@ const selene = new God(
 );
 
 const epimethius = new God(
-  "Epimethius",
+  "Epimetheus",
   "God of Afterthought",
   "EPIMETHEUS was the Titan god of afterthought and excuses. He and his brother Prometheus were given the task of populating the earth with animals and men. However, Epimetheus quickly exhausted the supply of gifts allotted for the task in the equipment of animals, leaving Prometheus' masterpiece, mankind, completely helpless. As a result the Titan brother was forced to steal fire from heaven to arm them. Zeus was angered by this theft and ordered the creation of Pandora, the first woman, as a means to deliver evil into the house of man. Despite the warnings of his brother, Epimetheus happily received her as his bride, but as soon as she arrived she lifted the lid of a jar entrusted her by the gods, releasing a plague of harmful daimones (spirits) to trouble mankind. Only Hope (Elpis) remained behind to succor the unfortunate race."
 );
@@ -202,7 +211,8 @@ const atlas = new God(
 const pleione = new God(
   "Pleione",
   "Oceanid Nymph",
-  "PLEIONE was an Okeanid-nymph of Mount Kyllene (Cyllene) in Arkadia, southern Greece. She was the wife of the Titan Atlas and bore him a bevy of beautiful daughters. Pleione may have been numbered amongst the Epimelides (Sheep-Nymphs) and presided over the multiplication of the flocks--for her name means 'to increase in number' and her grandson Hermes was the god of animal husbandry."
+  "PLEIONE was an Okeanid-nymph of Mount Kyllene (Cyllene) in Arkadia, southern Greece. She was the wife of the Titan Atlas and bore him a bevy of beautiful daughters. Pleione may have been numbered amongst the Epimelides (Sheep-Nymphs) and presided over the multiplication of the flocks--for her name means 'to increase in number' and her grandson Hermes was the god of animal husbandry.",
+  "https://en.wikipedia.org/wiki/Pleione_(mythology)"
 );
 
 const leto = new God(
@@ -214,7 +224,8 @@ const leto = new God(
 const asteria = new God(
   "Asteria",
   "Goddess of Nighttime Divinations",
-  "ASTERIA was the Titan goddess of falling stars and perhaps of nighttime divinations such as oneiromancy (by dreams) and astrology (by stars). She was the mother of Hekate (Hecate), goddess of witchcraft, by the Titan Perses. After the fall of the Titans, Zeus chased Asteria across the sky but she escaped him by transforming herself into a quail and leaping into the sea to became the island of Delos. Her sister Leto later gave birth to Apollon on the isle."
+  "ASTERIA was the Titan goddess of falling stars and perhaps of nighttime divinations such as oneiromancy (by dreams) and astrology (by stars). She was the mother of Hekate (Hecate), goddess of witchcraft, by the Titan Perses. After the fall of the Titans, Zeus chased Asteria across the sky but she escaped him by transforming herself into a quail and leaping into the sea to became the island of Delos. Her sister Leto later gave birth to Apollon on the isle.",
+  "https://en.wikipedia.org/wiki/Asteria_(Titaness)"
 );
 
 const perses = new God(
@@ -227,11 +238,12 @@ const perses = new God(
 const pallas = new God(
   "Pallas",
   "God of Battle",
-  "PALLAS was the Titan god of battle and warcraft. He was the father of Nike (Victory), Zelos (Rivalry), Kratos (Cratus, Strength) and Bia (Power) by Styx (Hatred), children who sided with Zeus during the Titan-War. Pallas' name was derived from the Greek word pallô meaning 'to brandish (a spear)'. He was vanquished by the goddess Athena who crafted her aigis (a goat-hide arm-guard) from his skin."
+  "PALLAS was the Titan god of battle and warcraft. He was the father of Nike (Victory), Zelos (Rivalry), Kratos (Cratus, Strength) and Bia (Power) by Styx (Hatred), children who sided with Zeus during the Titan-War. Pallas' name was derived from the Greek word pallô meaning 'to brandish (a spear)'. He was vanquished by the goddess Athena who crafted her aigis (a goat-hide arm-guard) from his skin.",
+  "https://en.wikipedia.org/wiki/Pallas_(Titan)"
 );
 
 const astraeus = new God(
-  "Astreus",
+  "Astraeus",
   "God of Astrology",
   "ASTRAIOS (Astraeus) was the Titan god of stars and planets and of the art of astrology. By Eos (the Dawn) he was the father of the Stars and the four seasonal Winds. The arrival of these Winds was heralded by the rising of certain constellations. Astraios also had a daughter named Astraia (Astraea) who was the goddess of the constellation Virgo. Astraios' name appears with those of several other Titanes (Titans) in the lists of Gigantes (Giants) who made war on the gods which suggests he played some role in both the Titan and Giant Wars."
 );
@@ -259,7 +271,8 @@ const hecate = new God(
 const triton = new God(
   "Triton",
   "Fish-Tailed Sea God",
-  "TRITON was a fish-tailed sea-god, the son and herald of Poseidon who stilled the waves with his conch-shell trumpet. Triton was also described as the god of the Tritonis, a large salt-lake in Libya. When the Argonauts found themselves stranded in the middle of the desert he helped them find passage from the lake back to the sea. Trtion was depicted in Greek vase painting as fish-tailed merman, sometimes bearded, sometimes youthful."
+  "TRITON was a fish-tailed sea-god, the son and herald of Poseidon who stilled the waves with his conch-shell trumpet. Triton was also described as the god of the Tritonis, a large salt-lake in Libya. When the Argonauts found themselves stranded in the middle of the desert he helped them find passage from the lake back to the sea. Trtion was depicted in Greek vase painting as fish-tailed merman, sometimes bearded, sometimes youthful.",
+  "https://en.wikipedia.org/wiki/Triton_(mythology)"
 );
 
 const maia = new God(
@@ -345,7 +358,8 @@ const ares = new God(
 const hebe = new God(
   "Hebe",
   "Goddess of Youth",
-  "HEBE was the goddess of youth and the cupbearer of the gods who served ambrosia at the heavenly feast. She was also the patron goddess of the young bride and an attendant of the goddess Aphrodite. Herakles (Heracles) received Hebe in marriage upon his ascension to Olympos, a wedding which reconciled the hero with Hebe's mother Hera."
+  "HEBE was the goddess of youth and the cupbearer of the gods who served ambrosia at the heavenly feast. She was also the patron goddess of the young bride and an attendant of the goddess Aphrodite. Herakles (Heracles) received Hebe in marriage upon his ascension to Olympos, a wedding which reconciled the hero with Hebe's mother Hera.",
+  "https://en.wikipedia.org/wiki/Hebe_(mythology)"
 );
 
 const apollo = new God(
