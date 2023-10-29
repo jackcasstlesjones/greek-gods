@@ -130,7 +130,7 @@ h2 {
   bottom: 0;
   right: 0;
   margin-left: auto;
-  background-color: rgb(221, 221, 221);
+  background-color: rgb(237, 237, 237);
   display: flex;
   width: 160px;
   padding: 20px 38px 20px 30px;
@@ -138,7 +138,7 @@ h2 {
 }
 
 .learn-more-container:hover {
-  background-color: rgb(238, 238, 238);
+  background-color: rgb(193, 193, 193);
 }
 
 .arrow-icon {
