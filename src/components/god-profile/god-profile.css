@@ -65,7 +65,9 @@ h2 {
   transition: height 0.3s ease-out 0s, width 1.3s ease-out 0.3s, font-style 0s;
   color: black;
   position: absolute;
-  background-color: white;
+  background-image: url("../../assets/white-texture.jpg");
+  background-size: cover;
+  /* background-color: white; */
   height: 500px;
   width: 850px;
   align-items: spa;
