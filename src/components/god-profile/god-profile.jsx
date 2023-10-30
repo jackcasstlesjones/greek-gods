@@ -3,15 +3,37 @@ import "./god-profile.css";
 import arrowIcon from "../../assets/arrow-icon.svg";
 
 import { useState } from "react";
-import zeusImg from "../../assets/imgs/zeus.webp";
-import dionysusImg from "../../assets/imgs/dionysus.webp";
-import hadesImg from "../../assets/imgs/hades.webp";
-import demeterImg from "../../assets/imgs/demeter.webp";
-import aphroditeImg from "../../assets/imgs/aphrodite.jpeg";
-import poseidonImg from "../../assets/imgs/poseidon.jpeg";
-import hestiaImg from "../../assets/imgs/hestia.jpg";
 import athenaImg from "../../assets/imgs/athena.jpeg";
+import amphitriteImg from "../../assets/imgs/amphitrite.jpeg";
+import aphroditeImg from "../../assets/imgs/aphrodite.jpeg";
+import apolloImg from "../../assets/imgs/apollo.jpeg";
+import aresImg from "../../assets/imgs/ares.jpeg";
+import artemisImg from "../../assets/imgs/artemis.webp";
+import atlasImg from "../../assets/imgs/atlas.jpeg";
+import demeterImg from "../../assets/imgs/demeter.webp";
+import dionysusImg from "../../assets/imgs/dionysus.webp";
+import epimetheusImg from "../../assets/imgs/epimetheus.webp";
+import erebusImg from "../../assets/imgs/erebus.jpeg";
+import gaiaImg from "../../assets/imgs/gaia.webp";
+import hadesImg from "../../assets/imgs/hades.webp";
+import heliosImg from "../../assets/imgs/helios.jpeg";
+import hephaestusImg from "../../assets/imgs/hephaestus.jpeg";
+import hermesImg from "../../assets/imgs/hermes.jpeg";
 import heraImg from "../../assets/imgs/hera.webp";
+import hestiaImg from "../../assets/imgs/hestia.jpg";
+import iapetusImg from "../../assets/imgs/iapetus.webp";
+import kronosImg from "../../assets/imgs/kronos.png";
+import mnemosyneImg from "../../assets/imgs/mnemosyne.webp";
+import nyxImg from "../../assets/imgs/nyx.jpeg";
+import oceanusImg from "../../assets/imgs/oceanus.jpeg";
+import ouranosImg from "../../assets/imgs/ouranos.png";
+import persephoneImg from "../../assets/imgs/persephone.jpg";
+import poseidonImg from "../../assets/imgs/poseidon.jpeg";
+import prometheusImg from "../../assets/imgs/prometheus.webp";
+import rheaImg from "../../assets/imgs/rhea.webp";
+import tethysImg from "../../assets/imgs/tethys.jpeg";
+import tritonImg from "../../assets/imgs/triton.jpeg";
+import zeusImg from "../../assets/imgs/zeus.webp";
 
 export default function GodProfile({
   uuid,
@@ -30,15 +52,37 @@ export default function GodProfile({
   const elementRef = useRef(null); // Create a ref for the element
 
   const godImages = {
-    Zeus: zeusImg,
-    Dionysus: dionysusImg,
-    Hades: hadesImg,
-    Demeter: demeterImg,
+    Amphitrite: amphitriteImg,
     Aphrodite: aphroditeImg,
-    Poseidon: poseidonImg,
-    Hestia: hestiaImg,
+    Apollo: apolloImg,
+    Ares: aresImg,
+    Artemis: artemisImg,
+    Atlas: atlasImg,
     Athena: athenaImg,
+    Demeter: demeterImg,
+    Dionysus: dionysusImg,
+    Epimetheus: epimetheusImg,
+    Erebus: erebusImg,
+    Gaia: gaiaImg,
+    Hades: hadesImg,
+    Helios: heliosImg,
+    Hephaestus: hephaestusImg,
     Hera: heraImg,
+    Hermes: hermesImg,
+    Hestia: hestiaImg,
+    Iapetus: iapetusImg,
+    Kronos: kronosImg,
+    Mnemosyne: mnemosyneImg,
+    Nyx: nyxImg,
+    Oceanus: oceanusImg,
+    Ouranos: ouranosImg,
+    Persephone: persephoneImg,
+    Poseidon: poseidonImg,
+    Prometheus: prometheusImg,
+    Rhea: rheaImg,
+    Tethys: tethysImg,
+    Triton: tritonImg,
+    Zeus: zeusImg,
   };
 
   const img = godImages[godName];
