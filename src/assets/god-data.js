@@ -154,7 +154,7 @@ const eurybia = new God(
 const metis = new God(
   "Metis",
   "Goddess of Good Counsel",
-  "METIS was one of the elder Okeanides and the Titan-goddess of good counsel, planning, cunning and wisdom. She was a counsellor of Zeus during the Titan War and hatched the plan through which Kronos (Cronus) was forced to regurgitate his devoured children. In an odd reversal of fortune, Zeus swallowed Metis whole when a prophecy was revealed that she was destined to bear a son greater than his father. Metis afterwards bore a daughter, Athena, within the very belly of the god and equipped her with arms and armour before she was rebirthed from the god's head.",
+  "METIS an elder Oceanid and the Titan-goddess of good counsel, planning, cunning and wisdom. She was a counsellor of Zeus during the Titan War and hatched the plan through which Kronos was forced to regurgitate his devoured children. Zeus swallowed Metis whole when a prophecy was revealed that she was destined to bear a son greater than his father. Metis afterwards bore a daughter, Athena, within the very belly of the god and equipped her with arms and armour before she was rebirthed from the god's head.",
   "https://en.wikipedia.org/wiki/Metis_(mythology)"
 );
 
@@ -167,7 +167,7 @@ const amphitrite = new God(
 const theOceanids = new God(
   "The Oceanids",
   "Water Nymphs",
-  "THE OCEANIDS were three thousand goddess-nymphs who presided over the sources of earth's fresh-water--from rain-clouds to subterranean springs and fountains. Their numbers included the Nephelai (Cloud-Nymphs), Aurai (Breeze-Nymphs), Naiades (Spring and Fountain Nymphs), Leimonides (Pasture Nymphs), and Anthousai (Flower Nymphs). The eldest among them were numbered among the Titanides (female Titans)--Styx, Dione, Neda, Metis, Klymene, Eurynome, Doris, Elektra, and Pleione. These were most likely heavenly goddesses of the clouds.",
+  "THE OCEANIDS were three thousand goddess-nymphs who presided over the sources of earth's fresh-water - from rain-clouds to subterranean springs and fountains. Their numbers included the Nephelai (Cloud-Nymphs), Aurai (Breeze-Nymphs), Naiades (Spring and Fountain Nymphs), Leimonides (Pasture Nymphs), and Anthousai (Flower Nymphs). The eldest among them were numbered among the Titanides Styx, Dione, Neda, Metis, Klymene, Eurynome, Doris, Elektra, and Pleione.",
   "https://en.wikipedia.org/wiki/Oceanids"
 );
 
