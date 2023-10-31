@@ -127,7 +127,7 @@ const theia = new God(
 const koios = new God(
   "Koios",
   "a Titan Brother",
-  "KOIOS (Coeus) was one of the elder Titanes (Titans), sons of Ouranos (Uranus, Sky) and Gaia (Gaea, Earth). He and his brothers conspired against their father, laying an ambush for him as he descended to lie with Earth. Four of the siblings were posted at the corners of the world, where they seized hold of him and held him fast, while Kronos (Cronus) castrated him with a sickle. In this myth the brothers apparently personified the great pillars which occur in near-Eastern cosmologies holding heaven and earth apart, or sometimes the whole cosmos aloft. Koios' alternate name, Polos ('of the northern pole'), suggests he was the Titan of the pillar of the north. His brothers Hyperion, Iapetos (Iapetus), and Krios (Crius), on the other hand, presided over the west, east, and south respectively. Koios, as god of the axis of heaven around which the constellations revolved, was probably also a god of heavenly oracles, just as his wife Phoibe (Phoebe) presided over the oracles of the axis of earth Delphi,--a role inherited by their grandson Apollon. The Titanes were eventually deposed by Zeus and cast into the pit of Tartaros. Hesiod describes this as a void located beneath the foundations of all, where earth, sea and sky have their roots. Here the Titanes shift in cosmological terms from being holders of heaven to bearers of the entire cosmos. According to Pindar and Aeschylus (in his lost play Prometheus Unbound) the Titanes were eventually released from the pit through the clemency of Zeus."
+  "KOIOS (Coeus) was one of the elder Titans, sons of Ouranos and Gaia. He and his brothers conspired against their father, laying an ambush for him as he descended to lie with Earth. Four of the siblings were posted at the corners of the world, where they seized hold of him while Kronos castrated him. The brothers personified the great pillars in near-Eastern cosmologies holding heaven and earth apart. Koios' alternate name, Polos ('of the northern pole'), suggests he was the Titan of the pillar of the north."
 );
 
 const phoebe = new God(
@@ -140,14 +140,14 @@ const phoebe = new God(
 const krios = new God(
   "Crius",
   "a Titan Brother",
-  "CRIUS was one of the elder Titanes (Titans), sons of Ouranos (Uranus, Sky) and Gaia (Gaea, Earth). Led by Kronos (Cronus), the brothers conspired against their father and prepared an ambush as he descended to lie with Earth. Krios, Koios (Coeus), Hyperion and Iapetos (Iapetus) were posted at the four corners of the world where they seized hold of the sky-god and held him firm, while Kronos, hidden in the centre, castrated him with a sickle. In this myth the four brothers probably represent the four cosmic pillars separating heaven and earth which are described in near-Eastern cosmogonies. Krios was likely the southern pillar, while his brothers Koios, Iapetos, and Hyperion were the pillars of the north, east and west respectively. Krios' connection with the south is found both in his name and family connections:-he is 'the Ram,' the constellation Aries, whose springtime rising in the south marked the start of the Greek year; his eldest son is Astraios (Astraeus), god of the stars; and his wife is Eurybia, a daughter of the sea.",
+  "CRIUS was one of the elder Titans, sons of Ouranos and Gaia. Led by Kronos, the brothers conspired against their father and prepared an ambush as he descended to lie with Earth. Krios, Koios, Hyperion and Iapetus hid at the four corners of the world where they seized hold of Ouranos, while Kronos, in the centre, castrated him with a sickle. The four brothers probably represent the four cosmic pillars separating heaven and earth described in near-Eastern cosmogonies. Krios was likely the southern pillar.",
   "https://en.wikipedia.org/wiki/Crius"
 );
 
 const eurybia = new God(
   "Eurybia",
   "Goddess of Mastery of the Sea",
-  "EURYBIA was the goddess of power over, and mastery of, the sea. She apparently presided over external forces which influence the main such as the rise of the constellations, seasonal weather, and the power of the winds. Eurybia was the wife of the Titan Krios (Crius) and the grandmother of a variety of divinities with power over the sea. These included the Anemoi (Winds), the Astra (Stars), Hekate (Lady of Witchraft), Selene (the Moon), Nike (Victory), Bia (Force), Kratos (Power), Zelos (Rivalry). Some of these also represent human mastery of the seas such as the winds for sailing, stars for navigation, and force, power and victory representing naval supremacy.",
+  "EURYBIA was the goddess of power over, and mastery of, the sea. Eurybia was the wife of the Titan Crius and the grandmother of a variety of divinities with power over the sea. These included the Anemoi (Winds), the Astra (Stars), Hekate (Lady of Witchraft), Selene (the Moon), Nike (Victory), Bia (Force), Kratos (Power), Zelos (Rivalry). Some of these also represent human mastery of the seas such as the winds for sailing, stars for navigation, and force, power and victory representing naval supremacy.",
   "https://en.wikipedia.org/wiki/Eurybia_(mythology)"
 );
 
@@ -192,7 +192,7 @@ const selene = new God(
 const epimethius = new God(
   "Epimetheus",
   "God of Afterthought",
-  "EPIMETHEUS was the Titan god of afterthought and excuses. He and his brother Prometheus were given the task of populating the earth with animals and men. However, Epimetheus quickly exhausted the supply of gifts allotted for the task in the equipment of animals, leaving Prometheus' masterpiece, mankind, completely helpless. As a result the Titan brother was forced to steal fire from heaven to arm them. Zeus was angered by this theft and ordered the creation of Pandora, the first woman, as a means to deliver evil into the house of man. Despite the warnings of his brother, Epimetheus happily received her as his bride, but as soon as she arrived she lifted the lid of a jar entrusted her by the gods, releasing a plague of harmful daimones (spirits) to trouble mankind. Only Hope (Elpis) remained behind to succor the unfortunate race."
+  "EPIMETHEUS was the Titan god of afterthought and excuses. He and his brother Prometheus were tasked with populating the earth. However, Epimetheus depleted their gifts, leaving mankind completely helpless. As a result the Titan brother stole fire from heaven to arm them. Zeus was angered by this theft and created Pandora, the first woman. Epimetheus happily received her as his bride, but she later opened a jar entrusted her by Zeus, releasing a plague of harmful spirits to trouble mankind."
 );
 
 const prometheus = new God(
