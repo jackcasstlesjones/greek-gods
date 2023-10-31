@@ -22,7 +22,7 @@ import hermesImg from "../../assets/imgs/hermes.jpeg";
 import heraImg from "../../assets/imgs/hera.webp";
 import hestiaImg from "../../assets/imgs/hestia.jpg";
 import iapetusImg from "../../assets/imgs/iapetus.webp";
-import kronosImg from "../../assets/imgs/kronos.png";
+import kronosImg from "../../assets/imgs/kronos.jpeg";
 import mnemosyneImg from "../../assets/imgs/mnemosyne.webp";
 import nyxImg from "../../assets/imgs/nyx.jpeg";
 import oceanusImg from "../../assets/imgs/oceanus.jpeg";
