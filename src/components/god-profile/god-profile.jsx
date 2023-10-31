@@ -10,10 +10,12 @@ import apolloImg from "../../assets/imgs/apollo.jpeg";
 import aresImg from "../../assets/imgs/ares.jpeg";
 import artemisImg from "../../assets/imgs/artemis.webp";
 import atlasImg from "../../assets/imgs/atlas.jpeg";
+import criusImg from "../../assets/imgs/crius.png";
 import demeterImg from "../../assets/imgs/demeter.webp";
 import dionysusImg from "../../assets/imgs/dionysus.webp";
 import epimetheusImg from "../../assets/imgs/epimetheus.webp";
 import erebusImg from "../../assets/imgs/erebus.jpeg";
+import eurybiaImg from "../../assets/imgs/eurybia.png";
 import gaiaImg from "../../assets/imgs/gaia.webp";
 import hadesImg from "../../assets/imgs/hades.webp";
 import heliosImg from "../../assets/imgs/helios.jpeg";
@@ -21,19 +23,29 @@ import hephaestusImg from "../../assets/imgs/hephaestus.jpeg";
 import hermesImg from "../../assets/imgs/hermes.jpeg";
 import heraImg from "../../assets/imgs/hera.webp";
 import hestiaImg from "../../assets/imgs/hestia.jpg";
+import hyperionImg from "../../assets/imgs/hyperion.png";
 import iapetusImg from "../../assets/imgs/iapetus.webp";
+import klymeneImg from "../../assets/imgs/klymene.png";
+import koiosImg from "../../assets/imgs/koios.png";
 import kronosImg from "../../assets/imgs/kronos.jpeg";
+import maiaImg from "../../assets/imgs/maia.png";
+import metisImg from "../../assets/imgs/metis.png";
 import mnemosyneImg from "../../assets/imgs/mnemosyne.webp";
 import nyxImg from "../../assets/imgs/nyx.jpeg";
 import oceanusImg from "../../assets/imgs/oceanus.jpeg";
+import oceanidsImg from "../../assets/imgs/oceanids.png";
 import ouranosImg from "../../assets/imgs/ouranos.png";
 import persephoneImg from "../../assets/imgs/persephone.jpg";
+import phoebeImg from "../../assets/imgs/phoebe.png";
 import poseidonImg from "../../assets/imgs/poseidon.jpeg";
 import prometheusImg from "../../assets/imgs/prometheus.webp";
 import rheaImg from "../../assets/imgs/rhea.webp";
 import tethysImg from "../../assets/imgs/tethys.jpeg";
+import theiaImg from "../../assets/imgs/theia.png";
+import themisImg from "../../assets/imgs/themis.png";
 import tritonImg from "../../assets/imgs/triton.jpeg";
 import zeusImg from "../../assets/imgs/zeus.webp";
+import { maia, themis } from "../../assets/god-data";
 
 export default function GodProfile({
   uuid,
@@ -59,10 +71,12 @@ export default function GodProfile({
     Artemis: artemisImg,
     Atlas: atlasImg,
     Athena: athenaImg,
+    Crius: criusImg,
     Demeter: demeterImg,
     Dionysus: dionysusImg,
     Epimetheus: epimetheusImg,
     Erebus: erebusImg,
+    Eurybia: eurybiaImg,
     Gaia: gaiaImg,
     Hades: hadesImg,
     Helios: heliosImg,
@@ -70,17 +84,26 @@ export default function GodProfile({
     Hera: heraImg,
     Hermes: hermesImg,
     Hestia: hestiaImg,
+    Hyperion: hyperionImg,
     Iapetus: iapetusImg,
+    Klymene: klymeneImg,
+    Koios: koiosImg,
     Kronos: kronosImg,
+    Maia: maiaImg,
+    Metis: metisImg,
     Mnemosyne: mnemosyneImg,
     Nyx: nyxImg,
     Oceanus: oceanusImg,
+    "The Oceanids": oceanidsImg,
     Ouranos: ouranosImg,
     Persephone: persephoneImg,
+    Phoebe: phoebeImg,
     Poseidon: poseidonImg,
     Prometheus: prometheusImg,
     Rhea: rheaImg,
     Tethys: tethysImg,
+    Theia: theiaImg,
+    Themis: themisImg,
     Triton: tritonImg,
     Zeus: zeusImg,
   };
