@@ -53,6 +53,7 @@ import persephoneImg from "../../assets/imgs/persephone.jpg";
 import persesImg from "../../assets/imgs/perses.png";
 import phoebeImg from "../../assets/imgs/phoebe.png";
 import pleiadesImg from "../../assets/imgs/pleiades.png";
+import pleioneImg from "../../assets/imgs/pleione.png";
 import poseidonImg from "../../assets/imgs/poseidon.jpeg";
 import prometheusImg from "../../assets/imgs/prometheus.webp";
 import rheaImg from "../../assets/imgs/rhea.webp";
@@ -129,6 +130,7 @@ export default function GodProfile({
     Perses: persesImg,
     Phoebe: phoebeImg,
     "The Pleiades": pleiadesImg,
+    Pleione: pleioneImg,
     Poseidon: poseidonImg,
     Prometheus: prometheusImg,
     Rhea: rheaImg,

@@ -282,7 +282,7 @@ const maia = new God(
 
 const thePleiades = new God(
   "The Pleiades",
-  "the Mountain Nymphs",
+  "Mountain Nymphs",
   "THE PLEIADES were seven mountain-nymph daughters of the Titan Atlas. Their leader was Maia the mother of Hermes by Zeus. Five of the other Pleiades were also loved by gods becoming ancestresses of various royal families including those of Sparta and Troy. When they were pursued by the lustful giant Orion, Zeus placed them amongst the stars as the constellation Pleiades. Their name means 'Daughters of Pleione' and also 'Ladies of Plenty' from the Greek word pleiôn 'plenty'.",
   "https://en.wikipedia.org/wiki/Pleiades_(Greek_mythology)"
 );
