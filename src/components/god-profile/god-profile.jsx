@@ -229,25 +229,31 @@ export default function GodProfile({
                 </ul>
               </div> */}
             </div>
-            <a
+            <div
               className={
-                openGod === uuid ? `learn-more-link open-text` : `closed-text`
-              }
-              target="_blank"
-              rel="nonreferrer"
-              href={
-                godLink ? godLink : `https://en.wikipedia.org/wiki/${godName}`
+                openGod === uuid
+                  ? `learn-more-container open-text`
+                  : `closed-text`
               }
             >
-              <div className="learn-more-container">
-                <h3>Learn More</h3>
+              <a
+                className={
+                  openGod === uuid ? `learn-more-link open-text` : `closed-text`
+                }
+                target="_blank"
+                rel="nonreferrer"
+                href={
+                  godLink ? godLink : `https://en.wikipedia.org/wiki/${godName}`
+                }
+              >
+                Learn More
                 <div className="arrow-icon">
                   <svg
                     className="arrow-icon"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    strokeWidth={1}
+                    strokeWidth={1.5}
                     stroke="currentColor"
                     className="w-6 h-6"
                   >
@@ -258,9 +264,10 @@ export default function GodProfile({
                     />
                   </svg>
                 </div>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
+
           <div className="right-side">
             <img className="god-img" src={img} alt="" />
             <button

@@ -119,26 +119,28 @@ h2 {
 }
 
 .learn-more-link {
-  color: inherit;
-  text-decoration: none;
-  font-size: 24px;
-}
-
-.learn-more-container {
   position: absolute;
   justify-content: center;
+  transition: all 0.2s;
   bottom: 0;
   right: 0;
   margin-left: auto;
   background-color: rgb(237, 237, 237);
   display: flex;
-  width: 160px;
-  padding: 20px 38px 20px 30px;
+  width: 200px;
   align-items: center;
+  color: inherit;
+  /* text-decoration: none; */
+  font-size: 28px;
+  gap: 20px;
+  display: flex;
+  border-bottom: solid 1px black;
+  padding: 18px 38px 18px 30px;
 }
 
-.learn-more-container:hover {
+.learn-more-link:hover {
   background-color: rgb(193, 193, 193);
+  transition: all 0.2s;
 }
 
 .arrow-icon {
