@@ -75,6 +75,7 @@ h2 {
 
 .open-godname {
   font-size: 44px;
+  letter-spacing: 0.8px;
   font-weight: bold;
   border-bottom: black 1.8px solid;
   padding: 20px 10px 14px 20px;
