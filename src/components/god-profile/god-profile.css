@@ -167,10 +167,10 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0s;
 }
 
 .close-button:hover {
-  transition: all 0s;
   cursor: pointer;
   background-color: rgb(188, 188, 188);
 }
