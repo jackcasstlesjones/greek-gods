@@ -18,8 +18,10 @@ export default function Modal({ startAudio }) {
       </h1>
       <ul>
         <li>Click and drag to move around the tree.</li>
+        <li>Double click to zoom in.</li>
         <li>Scroll or pinch to zoom in or out.</li>
         <li>Click on the name of a God to see more information about them.</li>
+        <li>Enjoy!</li>
       </ul>
       <div className="button-container">
         <button className="modal-button" onClick={closeAndAudio}>
