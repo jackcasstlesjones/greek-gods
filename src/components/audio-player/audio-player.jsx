@@ -1,10 +1,15 @@
 import React from "react";
 
-const AudioPlayer = ({ source }) => {
+const AudioPlayer = ({ source, audioRef }) => {
   return (
     <div>
-      <audio loop style={{ height: 20, color: "red" }} controls>
-        <source src={source} type="audio/mp3" autoPlay />
+      <audio
+        ref={audioRef}
+        src={source}
+        loop
+        style={{ height: 20, color: "red" }}
+      >
+        {/* <source src={source} type="audio/mp3" autoPlay />  */}
         Your browser does not support the audio element.
       </audio>
     </div>

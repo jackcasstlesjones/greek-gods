@@ -1,7 +1,13 @@
+.closed-modal {
+  visibility: hidden;
+}
+
 .modal {
-  width: 700px;
-  height: 500px;
+  width: 70%;
+  height: 60%;
   background-color: white;
+  background-image: url(../../assets/white-texture.jpg);
+  background-size: cover;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -9,14 +15,16 @@
   padding: 50px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 60px;
   border-radius: 6px;
   z-index: 999;
-  cursor: default;
+  cursor: auto;
 }
 
 .modal-title {
-  font-size: 32px;
+  font-size: 38px;
+  font-weight: 800;
 }
 
 ul {
@@ -26,5 +34,45 @@ ul {
 }
 
 li {
-  font-size: 24px;
+  /* list-style: disc; */
+  text-align: center;
+  font-size: 32px;
+}
+
+.button-container {
+  margin-top: 100px;
+  display: flex;
+  gap: 20px;
+}
+
+.modal-button {
+  background-color: rgb(255, 255, 255);
+  font-family: inherit;
+  padding: 22px;
+  font-size: 32px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(244, 244, 244);
+}
+
+.modal-footer {
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  background-color: white;
+  font-size: 18px;
+  font-weight: 600;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-footer a {
+  text-decoration: none;
+  color: inherit;
 }

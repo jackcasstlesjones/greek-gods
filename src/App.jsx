@@ -77,7 +77,8 @@ const App = () => {
   useEffect(() => {
     const canvas = panzoom(canvasRef.current, {
       autocenter: true,
-
+      maxZoom: 1.2,
+      minZoom: 0.15,
       initialX: 7000,
       initialY: 0,
     });
@@ -120,8 +121,17 @@ const App = () => {
     setOpenGod(uuid);
   };
 
+  /* AUDIO STUFF */
+  const [audioStatus, changeAudioStatus] = useState(false);
+  const audioRef = useRef();
+  const startAudio = () => {
+    audioRef.current.play();
+  };
+
   return (
     <>
+      {/* <button onClick={startAudio}>AUDIO</button> */}
+      <Modal startAudio={startAudio} />
       <div
         style={{
           width: "100vw",
@@ -132,8 +142,7 @@ const App = () => {
         {/* <button onClick={handleZoomIn}>Zoom In</button>
       <button onClick={handleZoomOut}>Zoom Out</button>
     <button onClick={getZoomLevel}>Get Zoom</button> */}
-        <AudioPlayer source={mySong} />
-        <Modal />
+        <AudioPlayer audioRef={audioRef} source={mySong} />
         <section className="tree" ref={canvasRef}>
           {/** ROW 1 */}
           <div className="space"></div>
