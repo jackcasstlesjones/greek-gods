@@ -25,14 +25,18 @@ export default function Modal({ startAudio }) {
       </ul>
       <div className="button-container">
         <button className="modal-button" onClick={closeAndAudio}>
-          Experience With Audio
+          continue With Audio
         </button>
         <button className="modal-button" onClick={closeModal}>
-          Experience without Audio
+          continue without Audio
         </button>
       </div>
       <div className="modal-footer">
-        <a className="modal-link" href="https://github.com/jackcasstlesjones">
+        <a
+          target="_blank"
+          className="modal-link"
+          href="https://github.com/jackcasstlesjones"
+        >
           Made by Jack Casstles-Jones
         </a>
       </div>
